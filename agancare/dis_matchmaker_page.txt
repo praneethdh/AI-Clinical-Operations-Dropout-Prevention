@@ -1,0 +1,1337 @@
+  0           0 RESUME                   0
+
+  1           2 LOAD_CONST               0 ('\npages/1_matchmaker.py\nIntake Matchmaker & Onboarding page.\nNow includes Risk-Adjusted Matching Override for high-risk demographics.\n')
+              4 STORE_NAME               0 (__doc__)
+
+  6           6 LOAD_CONST               1 (0)
+              8 LOAD_CONST               2 (None)
+             10 IMPORT_NAME              1 (sys)
+             12 STORE_NAME               1 (sys)
+             14 LOAD_CONST               1 (0)
+             16 LOAD_CONST               2 (None)
+             18 IMPORT_NAME              2 (os)
+             20 STORE_NAME               2 (os)
+             22 LOAD_CONST               1 (0)
+             24 LOAD_CONST               2 (None)
+             26 IMPORT_NAME              3 (datetime)
+             28 STORE_NAME               3 (datetime)
+
+  7          30 LOAD_NAME                1 (sys)
+             32 LOAD_ATTR                8 (path)
+             52 LOAD_ATTR               11 (NULL|self + insert)
+             72 LOAD_CONST               1 (0)
+             74 LOAD_NAME                2 (os)
+             76 LOAD_ATTR                8 (path)
+             96 LOAD_ATTR               13 (NULL|self + dirname)
+            116 LOAD_NAME                2 (os)
+            118 LOAD_ATTR                8 (path)
+            138 LOAD_ATTR               13 (NULL|self + dirname)
+            158 LOAD_NAME                7 (__file__)
+            160 CALL                     1
+            168 CALL                     1
+            176 CALL                     2
+            184 POP_TOP
+
+  9         186 LOAD_CONST               1 (0)
+            188 LOAD_CONST               2 (None)
+            190 IMPORT_NAME              8 (streamlit)
+            192 STORE_NAME               9 (st)
+
+ 10         194 LOAD_CONST               1 (0)
+            196 LOAD_CONST               2 (None)
+            198 IMPORT_NAME             10 (pandas)
+            200 STORE_NAME              11 (pd)
+
+ 11         202 LOAD_CONST               1 (0)
+            204 LOAD_CONST               3 (('load_therapists', 'load_patients', 'DATA_DIR'))
+            206 IMPORT_NAME             12 (utils.data_loader)
+            208 IMPORT_FROM             13 (load_therapists)
+            210 STORE_NAME              13 (load_therapists)
+            212 IMPORT_FROM             14 (load_patients)
+            214 STORE_NAME              14 (load_patients)
+            216 IMPORT_FROM             15 (DATA_DIR)
+            218 STORE_NAME              15 (DATA_DIR)
+            220 POP_TOP
+
+ 12         222 LOAD_CONST               1 (0)
+            224 LOAD_CONST               4 (('match_therapist_risk_adjusted', 'calculate_baseline_risk', 'get_match_reasoning'))
+            226 IMPORT_NAME             16 (utils.matchmaker)
+            228 IMPORT_FROM             17 (match_therapist_risk_adjusted)
+            230 STORE_NAME              17 (match_therapist_risk_adjusted)
+            232 IMPORT_FROM             18 (calculate_baseline_risk)
+            234 STORE_NAME              18 (calculate_baseline_risk)
+            236 IMPORT_FROM             19 (get_match_reasoning)
+            238 STORE_NAME              19 (get_match_reasoning)
+            240 POP_TOP
+
+ 13         242 LOAD_CONST               1 (0)
+            244 LOAD_CONST               5 (('risk_gauge',))
+            246 IMPORT_NAME             20 (utils.charts)
+            248 IMPORT_FROM             21 (risk_gauge)
+            250 STORE_NAME              21 (risk_gauge)
+            252 POP_TOP
+
+ 15         254 LOAD_CONST               6 (<code object assign_patient at 0x0000021AF94A9990, file ".\pages\1_matchmaker.py", line 15>)
+            256 MAKE_FUNCTION            0
+            258 STORE_NAME              22 (assign_patient)
+
+ 57         260 PUSH_NULL
+            262 LOAD_NAME                9 (st)
+            264 LOAD_ATTR               46 (set_page_config)
+            284 LOAD_CONST               7 ('Matchmaker — AganCare')
+            286 LOAD_CONST               8 ('🧩')
+            288 LOAD_CONST               9 ('wide')
+            290 KW_NAMES                10 (('page_title', 'page_icon', 'layout'))
+            292 CALL                     3
+            300 POP_TOP
+
+ 59         302 LOAD_CONST               1 (0)
+            304 LOAD_CONST              11 (('render_sidebar',))
+            306 IMPORT_NAME             24 (utils.navigation)
+            308 IMPORT_FROM             25 (render_sidebar)
+            310 STORE_NAME              25 (render_sidebar)
+            312 POP_TOP
+
+ 60         314 PUSH_NULL
+            316 LOAD_NAME               25 (render_sidebar)
+            318 CALL                     0
+            326 POP_TOP
+
+ 63         328 PUSH_NULL
+            330 LOAD_NAME                9 (st)
+            332 LOAD_ATTR               52 (markdown)
+            352 LOAD_CONST              12 ('\n<style>\n  .block-container { padding-top: 1.5rem; }\n  .metric-card {\n    background: #161B22; border: 1px solid #21262D;\n    border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.5rem;\n  }\n  .therapist-card {\n    background: #161B22; border: 1px solid #21262D;\n    border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 0.6rem;\n    transition: border-color 0.2s;\n  }\n  .therapist-card.top { border-color: #2D6A4F; }\n  .tag {\n    display: inline-block; background: #21262D;\n    border-radius: 20px; padding: 2px 10px;\n    font-size: 0.78rem; color: #8B949E; margin-right: 4px;\n  }\n  .risk-high { color: #E63946; font-weight: 700; }\n  .risk-med  { color: #F4A261; font-weight: 700; }\n  .risk-low  { color: #52B788; font-weight: 700; }\n  .factor-row {\n    display: flex; justify-content: space-between;\n    border-bottom: 1px solid #21262D; padding: 4px 0;\n    font-size: 0.85rem; color: #C9D1D9;\n  }\n  .override-banner {\n    background: linear-gradient(135deg, #3D1A1C 0%, #2E1506 100%);\n    border: 2px solid #E63946;\n    border-radius: 10px; padding: 1rem 1.2rem; margin-bottom: 1rem;\n    text-align: center;\n  }\n  .override-title {\n    font-size: 1rem; font-weight: 700; color: #E63946;\n    letter-spacing: 0.02em;\n  }\n  .override-sub {\n    font-size: 0.82rem; color: #F4A261; margin-top: 4px;\n  }\n  .retention-tag {\n    display: inline-block; background: #162120;\n    border: 1px solid #2D6A4F; border-radius: 20px;\n    padding: 2px 10px; font-size: 0.78rem; color: #52B788;\n    margin-left: 6px;\n  }\n</style>\n')
+
+109         354 LOAD_CONST              13 (True)
+
+ 63         356 KW_NAMES                14 (('unsafe_allow_html',))
+            358 CALL                     2
+            366 POP_TOP
+
+112         368 PUSH_NULL
+            370 LOAD_NAME                9 (st)
+            372 LOAD_ATTR               52 (markdown)
+            392 LOAD_CONST              15 ('## 🧩 Intake Matchmaker')
+            394 CALL                     1
+            402 POP_TOP
+
+113         404 PUSH_NULL
+            406 LOAD_NAME                9 (st)
+            408 LOAD_ATTR               52 (markdown)
+            428 LOAD_CONST              16 ("<p style='color:#8B949E;margin-top:-10px'>Match a new patient to the right therapist using AI embeddings + risk-adjusted override.</p>")
+
+114         430 LOAD_CONST              13 (True)
+
+113         432 KW_NAMES                14 (('unsafe_allow_html',))
+            434 CALL                     2
+            442 POP_TOP
+
+115         444 PUSH_NULL
+            446 LOAD_NAME                9 (st)
+            448 LOAD_ATTR               54 (divider)
+            468 CALL                     0
+            476 POP_TOP
+
+117         478 PUSH_NULL
+            480 LOAD_NAME               13 (load_therapists)
+            482 CALL                     0
+            490 STORE_NAME              28 (therapists_df)
+
+118         492 PUSH_NULL
+            494 LOAD_NAME               14 (load_patients)
+            496 CALL                     0
+            504 STORE_NAME              29 (patients_df)
+
+120         506 PUSH_NULL
+            508 LOAD_NAME                9 (st)
+            510 LOAD_ATTR               60 (columns)
+            530 LOAD_CONST              17 (1)
+            532 LOAD_CONST              18 (1.2)
+            534 BUILD_LIST               2
+            536 LOAD_CONST              19 ('large')
+            538 KW_NAMES                20 (('gap',))
+            540 CALL                     2
+            548 UNPACK_SEQUENCE          2
+            552 STORE_NAME              31 (col_form)
+            554 STORE_NAME              32 (col_results)
+
+122         556 LOAD_NAME               31 (col_form)
+            558 BEFORE_WITH
+            560 POP_TOP
+
+123         562 PUSH_NULL
+            564 LOAD_NAME                9 (st)
+            566 LOAD_ATTR               52 (markdown)
+            586 LOAD_CONST              21 ('### New Patient Intake')
+            588 CALL                     1
+            596 POP_TOP
+
+125         598 LOAD_CONST              22 ('assign_success')
+            600 LOAD_NAME                9 (st)
+            602 LOAD_ATTR               66 (session_state)
+            622 CONTAINS_OP              0
+            624 POP_JUMP_IF_FALSE       50 (to 726)
+
+126         626 PUSH_NULL
+            628 LOAD_NAME                9 (st)
+            630 LOAD_ATTR               68 (success)
+            650 LOAD_NAME                9 (st)
+            652 LOAD_ATTR               66 (session_state)
+            672 LOAD_ATTR               70 (assign_success)
+            692 CALL                     1
+            700 POP_TOP
+
+127         702 LOAD_NAME                9 (st)
+            704 LOAD_ATTR               66 (session_state)
+            724 DELETE_ATTR             35 (assign_success)
+
+129     >>  726 PUSH_NULL
+            728 LOAD_NAME                9 (st)
+            730 LOAD_ATTR               72 (text_input)
+            750 LOAD_CONST              23 ('Patient Full Name')
+            752 LOAD_CONST              24 ('in_full_name')
+            754 LOAD_CONST              25 ('e.g. Rohan Mehta')
+            756 KW_NAMES                26 (('key', 'placeholder'))
+            758 CALL                     3
+            766 STORE_NAME              37 (full_name)
+
+130         768 PUSH_NULL
+            770 LOAD_NAME                9 (st)
+            772 LOAD_ATTR               60 (columns)
+            792 LOAD_CONST              27 (2)
+            794 CALL                     1
+            802 UNPACK_SEQUENCE          2
+            806 STORE_NAME              38 (c01)
+            808 STORE_NAME              39 (c02)
+
+131         810 LOAD_NAME               38 (c01)
+            812 LOAD_ATTR               73 (NULL|self + text_input)
+            832 LOAD_CONST              28 ('Phone Number')
+            834 LOAD_CONST              29 ('in_phone')
+            836 LOAD_CONST              30 ('+91...')
+            838 KW_NAMES                26 (('key', 'placeholder'))
+            840 CALL                     3
+            848 STORE_NAME              40 (phone)
+
+132         850 LOAD_NAME               39 (c02)
+            852 LOAD_ATTR               73 (NULL|self + text_input)
+            872 LOAD_CONST              31 ('City')
+            874 LOAD_CONST              32 ('in_city')
+            876 LOAD_CONST              33 ('e.g. Mumbai')
+            878 KW_NAMES                26 (('key', 'placeholder'))
+            880 CALL                     3
+            888 STORE_NAME              41 (city)
+
+134         890 PUSH_NULL
+            892 LOAD_NAME                9 (st)
+            894 LOAD_ATTR               60 (columns)
+            914 LOAD_CONST              27 (2)
+            916 CALL                     1
+            924 UNPACK_SEQUENCE          2
+            928 STORE_NAME              42 (c1)
+            930 STORE_NAME              43 (c2)
+
+135         932 LOAD_NAME               42 (c1)
+            934 LOAD_ATTR               89 (NULL|self + number_input)
+            954 LOAD_CONST              34 ('Age')
+            956 LOAD_CONST              35 (13)
+            958 LOAD_CONST              36 (80)
+            960 LOAD_CONST              37 (28)
+            962 LOAD_CONST              38 ('in_age')
+            964 KW_NAMES                39 (('min_value', 'max_value', 'value', 'key'))
+            966 CALL                     5
+            974 STORE_NAME              45 (age)
+
+136         976 LOAD_NAME               43 (c2)
+            978 LOAD_ATTR               93 (NULL|self + selectbox)
+            998 LOAD_CONST              40 ('Gender')
+           1000 BUILD_LIST               0
+           1002 LOAD_CONST              41 (('Male', 'Female', 'Non-binary / Other'))
+           1004 LIST_EXTEND              1
+           1006 LOAD_CONST              42 ('in_gender')
+           1008 KW_NAMES                43 (('key',))
+           1010 CALL                     3
+           1018 STORE_NAME              47 (gender)
+
+137        1020 PUSH_NULL
+           1022 LOAD_NAME                9 (st)
+           1024 LOAD_ATTR               92 (selectbox)
+           1044 LOAD_CONST              44 ('Insurance Status')
+           1046 BUILD_LIST               0
+           1048 LOAD_CONST              45 (('Insured', 'Out-of-Pocket', 'Uninsured'))
+           1050 LIST_EXTEND              1
+           1052 LOAD_CONST              46 ('in_insurance')
+           1054 KW_NAMES                43 (('key',))
+           1056 CALL                     3
+           1064 STORE_NAME              48 (insurance)
+
+138        1066 PUSH_NULL
+           1068 LOAD_NAME                9 (st)
+           1070 LOAD_ATTR               92 (selectbox)
+           1090 LOAD_CONST              47 ('Therapist Gender Preference')
+           1092 BUILD_LIST               0
+           1094 LOAD_CONST              48 (('No Preference', 'Female Therapist', 'Male Therapist'))
+           1096 LIST_EXTEND              1
+           1098 LOAD_CONST              49 ('in_pref_gender')
+           1100 KW_NAMES                43 (('key',))
+           1102 CALL                     3
+           1110 STORE_NAME              49 (pref_gender)
+
+140        1112 PUSH_NULL
+           1114 LOAD_NAME                9 (st)
+           1116 LOAD_ATTR               60 (columns)
+           1136 LOAD_CONST              27 (2)
+           1138 CALL                     1
+           1146 UNPACK_SEQUENCE          2
+           1150 STORE_NAME              50 (c3)
+           1152 STORE_NAME              51 (c4)
+
+141        1154 LOAD_NAME               50 (c3)
+           1156 LOAD_ATTR              105 (NULL|self + slider)
+           1176 LOAD_CONST              50 ('Baseline PHQ-9 (Depression)')
+           1178 LOAD_CONST               1 (0)
+           1180 LOAD_CONST              51 (27)
+           1182 LOAD_CONST              52 (12)
+
+142        1184 LOAD_CONST              53 ('0-4 Minimal | 5-9 Mild | 10-14 Moderate | 15-19 Mod-Severe | 20-27 Severe')
+           1186 LOAD_CONST              54 ('in_phq9')
+
+141        1188 KW_NAMES                55 (('help', 'key'))
+           1190 CALL                     6
+           1198 STORE_NAME              53 (phq9)
+
+143        1200 LOAD_NAME               51 (c4)
+           1202 LOAD_ATTR              105 (NULL|self + slider)
+           1222 LOAD_CONST              56 ('Baseline GAD-7 (Anxiety)')
+           1224 LOAD_CONST               1 (0)
+           1226 LOAD_CONST              57 (21)
+           1228 LOAD_CONST              58 (10)
+
+144        1230 LOAD_CONST              59 ('0-4 Minimal | 5-9 Mild | 10-14 Moderate | 15-21 Severe')
+           1232 LOAD_CONST              60 ('in_gad7')
+
+143        1234 KW_NAMES                55 (('help', 'key'))
+           1236 CALL                     6
+           1244 STORE_NAME              54 (gad7)
+
+146        1246 PUSH_NULL
+           1248 LOAD_NAME                9 (st)
+           1250 LOAD_ATTR              110 (text_area)
+
+147        1270 LOAD_CONST              61 ("Patient's Intake Statement (in their own words)")
+
+148        1272 LOAD_CONST              62 ("e.g. I keep reliving the accident. Flashbacks every night, can't sleep...")
+
+149        1274 LOAD_CONST              63 (120)
+
+150        1276 LOAD_CONST              64 ('in_intake_text')
+
+146        1278 KW_NAMES                65 (('placeholder', 'height', 'key'))
+           1280 CALL                     4
+           1288 STORE_NAME              56 (intake_text)
+
+153        1290 PUSH_NULL
+           1292 LOAD_NAME                9 (st)
+           1294 LOAD_ATTR              114 (button)
+           1314 LOAD_CONST              66 ('🔍 Find Best Match')
+           1316 LOAD_CONST              67 ('primary')
+           1318 LOAD_CONST              13 (True)
+           1320 KW_NAMES                68 (('type', 'use_container_width'))
+           1322 CALL                     3
+           1330 STORE_NAME              58 (run_btn)
+
+122        1332 LOAD_CONST               2 (None)
+           1334 LOAD_CONST               2 (None)
+           1336 LOAD_CONST               2 (None)
+           1338 CALL                     2
+           1346 POP_TOP
+
+155     >> 1348 LOAD_NAME               32 (col_results)
+           1350 BEFORE_WITH
+           1352 POP_TOP
+
+156        1354 LOAD_NAME               58 (run_btn)
+           1356 EXTENDED_ARG             3
+           1358 POP_JUMP_IF_FALSE      809 (to 2978)
+           1360 LOAD_NAME               56 (intake_text)
+           1362 LOAD_ATTR              119 (NULL|self + strip)
+           1382 CALL                     0
+           1390 EXTENDED_ARG             3
+           1392 POP_JUMP_IF_FALSE      792 (to 2978)
+
+157        1394 PUSH_NULL
+           1396 LOAD_NAME                9 (st)
+           1398 LOAD_ATTR              120 (spinner)
+           1418 LOAD_CONST              69 ('Analyzing risk profile and matching therapists...')
+           1420 CALL                     1
+           1428 BEFORE_WITH
+           1430 POP_TOP
+
+158        1432 PUSH_NULL
+           1434 LOAD_NAME               17 (match_therapist_risk_adjusted)
+
+159        1436 LOAD_NAME               56 (intake_text)
+
+160        1438 LOAD_NAME               28 (therapists_df)
+
+161        1440 LOAD_NAME               49 (pref_gender)
+
+162        1442 LOAD_NAME               45 (age)
+
+163        1444 LOAD_NAME               47 (gender)
+
+164        1446 LOAD_NAME               48 (insurance)
+
+165        1448 LOAD_NAME               53 (phq9)
+
+166        1450 LOAD_NAME               54 (gad7)
+
+158        1452 KW_NAMES                70 (('intake_text', 'therapists_df', 'pref_gender', 'age', 'gender', 'insurance', 'phq9', 'gad7'))
+           1454 CALL                     8
+           1462 STORE_NAME              61 (result)
+
+157        1464 LOAD_CONST               2 (None)
+           1466 LOAD_CONST               2 (None)
+           1468 LOAD_CONST               2 (None)
+           1470 CALL                     2
+           1478 POP_TOP
+
+169     >> 1480 LOAD_NAME               61 (result)
+           1482 LOAD_CONST              71 ('matches')
+           1484 BINARY_SUBSCR
+           1488 STORE_NAME              62 (matches)
+
+170        1490 LOAD_NAME               61 (result)
+           1492 LOAD_CONST              72 ('risk')
+           1494 BINARY_SUBSCR
+           1498 STORE_NAME              63 (risk)
+
+171        1500 LOAD_NAME               61 (result)
+           1502 LOAD_CONST              73 ('override_active')
+           1504 BINARY_SUBSCR
+           1508 STORE_NAME              64 (override_active)
+
+174        1510 PUSH_NULL
+           1512 LOAD_NAME                9 (st)
+           1514 LOAD_ATTR               52 (markdown)
+           1534 LOAD_CONST              74 ('### 🚨 Baseline Flight Risk')
+           1536 CALL                     1
+           1544 POP_TOP
+
+175        1546 PUSH_NULL
+           1548 LOAD_NAME                9 (st)
+           1550 LOAD_ATTR               60 (columns)
+           1570 LOAD_CONST              17 (1)
+           1572 LOAD_CONST              75 (1.4)
+           1574 BUILD_LIST               2
+           1576 CALL                     1
+           1584 UNPACK_SEQUENCE          2
+           1588 STORE_NAME              65 (gcol)
+           1590 STORE_NAME              66 (fcol)
+
+176        1592 LOAD_NAME               65 (gcol)
+           1594 BEFORE_WITH
+           1596 POP_TOP
+
+177        1598 PUSH_NULL
+           1600 LOAD_NAME                9 (st)
+           1602 LOAD_ATTR              134 (plotly_chart)
+           1622 PUSH_NULL
+           1624 LOAD_NAME               21 (risk_gauge)
+           1626 LOAD_NAME               63 (risk)
+           1628 LOAD_CONST              76 ('score')
+           1630 BINARY_SUBSCR
+           1634 CALL                     1
+           1642 LOAD_CONST              13 (True)
+           1644 LOAD_CONST              77 ('displayModeBar')
+           1646 LOAD_CONST              78 (False)
+           1648 BUILD_MAP                1
+           1650 KW_NAMES                79 (('use_container_width', 'config'))
+           1652 CALL                     3
+           1660 POP_TOP
+
+176        1662 LOAD_CONST               2 (None)
+           1664 LOAD_CONST               2 (None)
+           1666 LOAD_CONST               2 (None)
+           1668 CALL                     2
+           1676 POP_TOP
+
+178     >> 1678 LOAD_NAME               66 (fcol)
+           1680 BEFORE_WITH
+           1682 POP_TOP
+
+179        1684 LOAD_CONST              80 ('risk-high')
+           1686 LOAD_CONST              81 ('risk-med')
+           1688 LOAD_CONST              82 ('risk-low')
+           1690 LOAD_CONST              83 (('HIGH', 'MEDIUM', 'LOW'))
+           1692 BUILD_CONST_KEY_MAP      3
+           1694 LOAD_NAME               63 (risk)
+           1696 LOAD_CONST              84 ('level')
+           1698 BINARY_SUBSCR
+           1702 BINARY_SUBSCR
+           1706 STORE_NAME              68 (level_class)
+
+180        1708 PUSH_NULL
+           1710 LOAD_NAME                9 (st)
+           1712 LOAD_ATTR               52 (markdown)
+           1732 LOAD_CONST              85 ("<br><span class='")
+           1734 LOAD_NAME               68 (level_class)
+           1736 FORMAT_VALUE             0
+           1738 LOAD_CONST              86 ("' style='font-size:1.3rem'>")
+           1740 LOAD_NAME               63 (risk)
+           1742 LOAD_CONST              84 ('level')
+           1744 BINARY_SUBSCR
+           1748 FORMAT_VALUE             0
+           1750 LOAD_CONST              87 (' RISK</span>')
+           1752 BUILD_STRING             5
+
+181        1754 LOAD_CONST              13 (True)
+
+180        1756 KW_NAMES                14 (('unsafe_allow_html',))
+           1758 CALL                     2
+           1766 POP_TOP
+
+182        1768 PUSH_NULL
+           1770 LOAD_NAME                9 (st)
+           1772 LOAD_ATTR               52 (markdown)
+           1792 LOAD_CONST              88 ('**Contributing factors:**')
+           1794 CALL                     1
+           1802 POP_TOP
+
+183        1804 LOAD_NAME               63 (risk)
+           1806 LOAD_CONST              89 ('factors')
+           1808 BINARY_SUBSCR
+           1812 GET_ITER
+        >> 1814 FOR_ITER                32 (to 1882)
+           1818 UNPACK_SEQUENCE          2
+           1822 STORE_NAME              69 (factor)
+           1824 STORE_NAME              70 (pts)
+
+184        1826 PUSH_NULL
+           1828 LOAD_NAME                9 (st)
+           1830 LOAD_ATTR               52 (markdown)
+
+185        1850 LOAD_CONST              90 ("<div class='factor-row'><span>")
+           1852 LOAD_NAME               69 (factor)
+           1854 FORMAT_VALUE             0
+           1856 LOAD_CONST              91 ("</span><span style='color:#F4A261'>+")
+           1858 LOAD_NAME               70 (pts)
+           1860 FORMAT_VALUE             0
+           1862 LOAD_CONST              92 ('</span></div>')
+           1864 BUILD_STRING             5
+
+186        1866 LOAD_CONST              13 (True)
+
+184        1868 KW_NAMES                14 (('unsafe_allow_html',))
+           1870 CALL                     2
+           1878 POP_TOP
+           1880 JUMP_BACKWARD           34 (to 1814)
+
+183     >> 1882 END_FOR
+
+188        1884 LOAD_NAME               63 (risk)
+           1886 LOAD_CONST              89 ('factors')
+           1888 BINARY_SUBSCR
+           1892 POP_JUMP_IF_TRUE        20 (to 1934)
+
+189        1894 PUSH_NULL
+           1896 LOAD_NAME                9 (st)
+           1898 LOAD_ATTR               52 (markdown)
+           1918 LOAD_CONST              93 ("<span style='color:#52B788'>✓ No significant risk factors identified.</span>")
+
+190        1920 LOAD_CONST              13 (True)
+
+189        1922 KW_NAMES                14 (('unsafe_allow_html',))
+           1924 CALL                     2
+           1932 POP_TOP
+
+178     >> 1934 LOAD_CONST               2 (None)
+           1936 LOAD_CONST               2 (None)
+           1938 LOAD_CONST               2 (None)
+           1940 CALL                     2
+           1948 POP_TOP
+
+192     >> 1950 PUSH_NULL
+           1952 LOAD_NAME                9 (st)
+           1954 LOAD_ATTR               54 (divider)
+           1974 CALL                     0
+           1982 POP_TOP
+
+195        1984 LOAD_NAME               64 (override_active)
+           1986 POP_JUMP_IF_FALSE       20 (to 2028)
+
+196        1988 PUSH_NULL
+           1990 LOAD_NAME                9 (st)
+           1992 LOAD_ATTR               52 (markdown)
+           2012 LOAD_CONST              94 ("\n            <div class='override-banner'>\n              <div class='override-title'>⚠️ High Risk Demographic Detected: NLP Matching Overridden</div>\n              <div class='override-sub'>Paired for Maximum Retention — Therapists ranked by historical retention rate, not text similarity.</div>\n            </div>\n            ")
+
+201        2014 LOAD_CONST              13 (True)
+
+196        2016 KW_NAMES                14 (('unsafe_allow_html',))
+           2018 CALL                     2
+           2026 POP_TOP
+
+204     >> 2028 LOAD_NAME               64 (override_active)
+           2030 POP_JUMP_IF_TRUE         2 (to 2036)
+           2032 LOAD_CONST              95 ('🏆 Therapist Recommendations')
+           2034 JUMP_FORWARD             1 (to 2038)
+        >> 2036 LOAD_CONST              96 ('🛡️ Retention-Ranked Therapists')
+        >> 2038 STORE_NAME              71 (header_text)
+
+205        2040 PUSH_NULL
+           2042 LOAD_NAME                9 (st)
+           2044 LOAD_ATTR               52 (markdown)
+           2064 LOAD_CONST              97 ('### ')
+           2066 LOAD_NAME               71 (header_text)
+           2068 FORMAT_VALUE             0
+           2070 BUILD_STRING             2
+           2072 CALL                     1
+           2080 POP_TOP
+
+207        2082 LOAD_NAME               62 (matches)
+           2084 LOAD_ATTR              145 (NULL|self + iterrows)
+           2104 CALL                     0
+           2112 GET_ITER
+        >> 2114 EXTENDED_ARG             1
+           2116 FOR_ITER               376 (to 2872)
+           2120 UNPACK_SEQUENCE          2
+           2124 STORE_NAME              73 (i)
+           2126 STORE_NAME              74 (row)
+
+208        2128 LOAD_NAME               73 (i)
+           2130 LOAD_CONST               1 (0)
+           2132 COMPARE_OP              40 (==)
+           2136 POP_JUMP_IF_FALSE        2 (to 2142)
+           2138 LOAD_CONST              98 ('therapist-card top')
+           2140 JUMP_FORWARD             1 (to 2144)
+        >> 2142 LOAD_CONST              99 ('therapist-card')
+        >> 2144 STORE_NAME              75 (card_class)
+
+209        2146 LOAD_NAME               73 (i)
+           2148 LOAD_CONST               1 (0)
+           2150 COMPARE_OP              40 (==)
+           2154 POP_JUMP_IF_FALSE        2 (to 2160)
+           2156 LOAD_CONST             100 ('🥇 Best Match')
+           2158 JUMP_FORWARD             7 (to 2174)
+        >> 2160 LOAD_CONST             101 ('#')
+           2162 LOAD_NAME               73 (i)
+           2164 LOAD_CONST              17 (1)
+           2166 BINARY_OP                0 (+)
+           2170 FORMAT_VALUE             0
+           2172 BUILD_STRING             2
+        >> 2174 STORE_NAME              76 (badge)
+
+210        2176 PUSH_NULL
+           2178 LOAD_NAME               77 (max)
+           2180 LOAD_CONST             102 (4)
+           2182 PUSH_NULL
+           2184 LOAD_NAME               78 (int)
+           2186 LOAD_NAME               74 (row)
+           2188 LOAD_CONST             103 ('match_pct')
+           2190 BINARY_SUBSCR
+           2194 CALL                     1
+           2202 CALL                     2
+           2210 STORE_NAME              79 (bar_w)
+
+211        2212 LOAD_NAME               73 (i)
+           2214 LOAD_CONST               1 (0)
+           2216 COMPARE_OP              40 (==)
+           2220 POP_JUMP_IF_FALSE        2 (to 2226)
+           2222 LOAD_CONST             104 ('#2D6A4F')
+           2224 JUMP_FORWARD             1 (to 2228)
+        >> 2226 LOAD_CONST             105 ('#21262D')
+        >> 2228 STORE_NAME              80 (bar_color)
+
+214        2230 LOAD_NAME               64 (override_active)
+           2232 POP_JUMP_IF_FALSE       62 (to 2358)
+
+215        2234 LOAD_NAME               74 (row)
+           2236 LOAD_CONST             103 ('match_pct')
+           2238 BINARY_SUBSCR
+           2242 FORMAT_VALUE             0
+           2244 LOAD_CONST             106 ('% retention')
+           2246 BUILD_STRING             2
+           2248 STORE_NAME              81 (score_label)
+
+217        2250 LOAD_CONST             107 ("<span class='retention-tag'>")
+
+218        2252 PUSH_NULL
+           2254 LOAD_NAME               78 (int)
+           2256 LOAD_NAME               74 (row)
+           2258 LOAD_ATTR              165 (NULL|self + get)
+           2278 LOAD_CONST             108 ('retained')
+           2280 LOAD_CONST               1 (0)
+           2282 CALL                     2
+           2290 CALL                     1
+           2298 FORMAT_VALUE             0
+           2300 LOAD_CONST             109 ('/')
+           2302 PUSH_NULL
+           2304 LOAD_NAME               78 (int)
+           2306 LOAD_NAME               74 (row)
+           2308 LOAD_ATTR              165 (NULL|self + get)
+           2328 LOAD_CONST             110 ('total_patients')
+           2330 LOAD_CONST               1 (0)
+           2332 CALL                     2
+           2340 CALL                     1
+           2348 FORMAT_VALUE             0
+           2350 LOAD_CONST             111 (' patients retained</span>')
+
+217        2352 BUILD_STRING             5
+
+216        2354 STORE_NAME              83 (retention_extra)
+           2356 JUMP_FORWARD            10 (to 2378)
+
+222     >> 2358 LOAD_NAME               74 (row)
+           2360 LOAD_CONST             103 ('match_pct')
+           2362 BINARY_SUBSCR
+           2366 FORMAT_VALUE             0
+           2368 LOAD_CONST             112 ('%')
+           2370 BUILD_STRING             2
+           2372 STORE_NAME              81 (score_label)
+
+223        2374 LOAD_CONST             113 ('')
+           2376 STORE_NAME              83 (retention_extra)
+
+225     >> 2378 PUSH_NULL
+           2380 LOAD_NAME                9 (st)
+           2382 LOAD_ATTR               52 (markdown)
+           2402 LOAD_CONST             114 ("\n            <div class='")
+
+226        2404 LOAD_NAME               75 (card_class)
+           2406 FORMAT_VALUE             0
+           2408 LOAD_CONST             115 ("'>\n              <div style='display:flex;justify-content:space-between;align-items:center'>\n                <div>\n                  <strong style='font-size:1rem'>")
+
+229        2410 LOAD_NAME               76 (badge)
+           2412 FORMAT_VALUE             0
+           2414 LOAD_CONST             116 (' &nbsp; ')
+           2416 LOAD_NAME               74 (row)
+           2418 LOAD_CONST             117 ('name')
+           2420 BINARY_SUBSCR
+           2424 FORMAT_VALUE             0
+           2426 LOAD_CONST             118 ("</strong>\n                  <span class='tag' style='margin-left:8px'>")
+
+230        2428 LOAD_NAME               74 (row)
+           2430 LOAD_CONST             119 ('gender')
+           2432 BINARY_SUBSCR
+           2436 FORMAT_VALUE             0
+           2438 LOAD_CONST             120 ('</span> ')
+           2440 LOAD_NAME               83 (retention_extra)
+           2442 FORMAT_VALUE             0
+           2444 LOAD_CONST             121 ("\n                </div>\n                <span style='font-size:1.1rem;color:")
+
+232        2446 LOAD_NAME               73 (i)
+           2448 LOAD_CONST               1 (0)
+           2450 COMPARE_OP              40 (==)
+           2454 POP_JUMP_IF_FALSE        2 (to 2460)
+           2456 LOAD_CONST             122 ('#52B788')
+           2458 JUMP_FORWARD             1 (to 2462)
+        >> 2460 LOAD_CONST             123 ('#8B949E')
+        >> 2462 FORMAT_VALUE             0
+           2464 LOAD_CONST             124 (";font-weight:700'>\n                  ")
+
+233        2466 LOAD_NAME               81 (score_label)
+           2468 FORMAT_VALUE             0
+           2470 LOAD_CONST             125 ("\n                </span>\n              </div>\n              <div style='margin:6px 0 4px;color:#8B949E;font-size:0.83rem'>")
+
+236        2472 LOAD_NAME               74 (row)
+           2474 LOAD_CONST             126 ('specialty')
+           2476 BINARY_SUBSCR
+           2480 FORMAT_VALUE             0
+           2482 LOAD_CONST             127 ("</div>\n              <div style='background:#21262D;border-radius:4px;height:6px;margin-top:8px'>\n                <div style='background:")
+
+238        2484 LOAD_NAME               80 (bar_color)
+           2486 FORMAT_VALUE             0
+           2488 LOAD_CONST             128 (';width:')
+           2490 LOAD_NAME               79 (bar_w)
+           2492 FORMAT_VALUE             0
+           2494 LOAD_CONST             129 ("%;height:6px;border-radius:4px'></div>\n              </div>\n            ")
+
+225        2496 BUILD_STRING            21
+
+240        2498 LOAD_CONST              13 (True)
+
+225        2500 KW_NAMES                14 (('unsafe_allow_html',))
+           2502 CALL                     2
+           2510 POP_TOP
+
+243        2512 PUSH_NULL
+           2514 LOAD_NAME                9 (st)
+           2516 LOAD_ATTR              114 (button)
+           2536 LOAD_CONST             130 ('➕ Assign ')
+           2538 LOAD_NAME               74 (row)
+           2540 LOAD_CONST             117 ('name')
+           2542 BINARY_SUBSCR
+           2546 FORMAT_VALUE             0
+           2548 LOAD_CONST             131 (' to Patient & Save')
+           2550 BUILD_STRING             3
+           2552 LOAD_CONST             132 ('assign_')
+           2554 LOAD_NAME               73 (i)
+           2556 FORMAT_VALUE             0
+           2558 BUILD_STRING             2
+           2560 LOAD_NAME               22 (assign_patient)
+           2562 LOAD_NAME               74 (row)
+           2564 LOAD_CONST             133 ('therapist_id')
+           2566 BINARY_SUBSCR
+           2570 LOAD_NAME               74 (row)
+           2572 LOAD_CONST             117 ('name')
+           2574 BINARY_SUBSCR
+           2578 LOAD_NAME               63 (risk)
+           2580 LOAD_CONST              76 ('score')
+           2582 BINARY_SUBSCR
+           2586 BUILD_TUPLE              3
+           2588 LOAD_CONST              13 (True)
+           2590 LOAD_NAME               73 (i)
+           2592 LOAD_CONST               1 (0)
+           2594 COMPARE_OP              40 (==)
+           2598 POP_JUMP_IF_FALSE        2 (to 2604)
+           2600 LOAD_CONST              67 ('primary')
+           2602 JUMP_FORWARD             1 (to 2606)
+        >> 2604 LOAD_CONST             134 ('secondary')
+        >> 2606 KW_NAMES               135 (('key', 'on_click', 'args', 'use_container_width', 'type'))
+           2608 CALL                     6
+           2616 POP_TOP
+
+245        2618 LOAD_NAME               64 (override_active)
+           2620 POP_JUMP_IF_TRUE        83 (to 2788)
+
+246        2622 PUSH_NULL
+           2624 LOAD_NAME                9 (st)
+           2626 LOAD_ATTR              120 (spinner)
+           2646 LOAD_CONST             136 ('Generating AI Match Reasoning for ')
+           2648 LOAD_NAME               74 (row)
+           2650 LOAD_CONST             117 ('name')
+           2652 BINARY_SUBSCR
+           2656 FORMAT_VALUE             0
+           2658 LOAD_CONST             137 ('...')
+           2660 BUILD_STRING             3
+           2662 CALL                     1
+           2670 BEFORE_WITH
+           2672 POP_TOP
+
+247        2674 PUSH_NULL
+           2676 LOAD_NAME               19 (get_match_reasoning)
+           2678 LOAD_NAME               56 (intake_text)
+           2680 LOAD_NAME               74 (row)
+           2682 LOAD_CONST             138 ('style_keywords')
+           2684 BINARY_SUBSCR
+           2688 CALL                     2
+           2696 STORE_NAME              84 (reasoning)
+
+246        2698 LOAD_CONST               2 (None)
+           2700 LOAD_CONST               2 (None)
+           2702 LOAD_CONST               2 (None)
+           2704 CALL                     2
+           2712 POP_TOP
+
+248     >> 2714 LOAD_NAME               73 (i)
+           2716 LOAD_CONST               1 (0)
+           2718 COMPARE_OP              40 (==)
+           2722 POP_JUMP_IF_FALSE        2 (to 2728)
+           2724 LOAD_CONST             104 ('#2D6A4F')
+           2726 JUMP_FORWARD             1 (to 2730)
+        >> 2728 LOAD_CONST             105 ('#21262D')
+        >> 2730 STORE_NAME              85 (border_col)
+
+249        2732 PUSH_NULL
+           2734 LOAD_NAME                9 (st)
+           2736 LOAD_ATTR               52 (markdown)
+           2756 LOAD_CONST             139 ("<div style='margin-top:4px;margin-bottom:16px;padding:12px;background:#0D1612;border:1px solid ")
+           2758 LOAD_NAME               85 (border_col)
+           2760 FORMAT_VALUE             0
+           2762 LOAD_CONST             140 (";border-radius:6px;font-size:0.85rem;color:#E6EDF3;'>💡 <b>AI Match Reasoning:</b><br>")
+           2764 LOAD_NAME               84 (reasoning)
+           2766 FORMAT_VALUE             0
+           2768 LOAD_CONST             141 ('</div>')
+           2770 BUILD_STRING             5
+           2772 LOAD_CONST              13 (True)
+           2774 KW_NAMES                14 (('unsafe_allow_html',))
+           2776 CALL                     2
+           2784 POP_TOP
+           2786 JUMP_FORWARD            20 (to 2828)
+
+251     >> 2788 PUSH_NULL
+           2790 LOAD_NAME                9 (st)
+           2792 LOAD_ATTR               52 (markdown)
+           2812 LOAD_CONST             142 ('<br>')
+           2814 LOAD_CONST              13 (True)
+           2816 KW_NAMES                14 (('unsafe_allow_html',))
+           2818 CALL                     2
+           2826 POP_TOP
+
+253     >> 2828 PUSH_NULL
+           2830 LOAD_NAME                9 (st)
+           2832 LOAD_ATTR               52 (markdown)
+           2852 LOAD_CONST             141 ('</div>')
+           2854 LOAD_CONST              13 (True)
+           2856 KW_NAMES                14 (('unsafe_allow_html',))
+           2858 CALL                     2
+           2866 POP_TOP
+           2868 EXTENDED_ARG             1
+           2870 JUMP_BACKWARD          379 (to 2114)
+
+207     >> 2872 END_FOR
+
+255        2874 LOAD_NAME               63 (risk)
+           2876 LOAD_CONST              84 ('level')
+           2878 BINARY_SUBSCR
+           2882 LOAD_CONST             143 ('HIGH')
+           2884 COMPARE_OP              40 (==)
+           2888 POP_JUMP_IF_FALSE      198 (to 3286)
+
+256        2890 LOAD_NAME               64 (override_active)
+           2892 POP_JUMP_IF_FALSE       21 (to 2936)
+
+257        2894 PUSH_NULL
+           2896 LOAD_NAME                9 (st)
+           2898 LOAD_ATTR              172 (error)
+
+258        2918 LOAD_CONST             144 ('🛡️ HIGH RISK patient automatically paired with the highest-retention therapist. Schedule a check-in call within the first 2 sessions.')
+
+260        2920 LOAD_CONST             145 ('🛡️')
+
+257        2922 KW_NAMES               146 (('icon',))
+           2924 CALL                     2
+           2932 POP_TOP
+           2934 JUMP_FORWARD           175 (to 3286)
+
+263     >> 2936 PUSH_NULL
+           2938 LOAD_NAME                9 (st)
+           2940 LOAD_ATTR              174 (warning)
+           2960 LOAD_CONST             147 ('⚠️ This patient is HIGH RISK for early dropout. Consider scheduling a check-in call within the first 2 sessions.')
+
+264        2962 LOAD_CONST             148 ('⚠️')
+
+263        2964 KW_NAMES               146 (('icon',))
+           2966 CALL                     2
+           2974 POP_TOP
+           2976 JUMP_FORWARD           154 (to 3286)
+
+266     >> 2978 LOAD_NAME               58 (run_btn)
+           2980 POP_JUMP_IF_FALSE       19 (to 3020)
+
+267        2982 PUSH_NULL
+           2984 LOAD_NAME                9 (st)
+           2986 LOAD_ATTR              174 (warning)
+           3006 LOAD_CONST             149 ('Please enter an intake statement to match.')
+           3008 CALL                     1
+           3016 POP_TOP
+           3018 JUMP_FORWARD           133 (to 3286)
+
+270     >> 3020 PUSH_NULL
+           3022 LOAD_NAME                9 (st)
+           3024 LOAD_ATTR               52 (markdown)
+           3044 LOAD_CONST             150 ('### 📋 Registered Patients')
+           3046 CALL                     1
+           3054 POP_TOP
+
+271        3056 PUSH_NULL
+           3058 LOAD_NAME                9 (st)
+           3060 LOAD_ATTR               52 (markdown)
+           3080 LOAD_CONST             151 ("<p style='color:#8B949E'>")
+           3082 PUSH_NULL
+           3084 LOAD_NAME               88 (len)
+           3086 LOAD_NAME               29 (patients_df)
+           3088 CALL                     1
+           3096 FORMAT_VALUE             0
+           3098 LOAD_CONST             152 (' patients onboarded</p>')
+           3100 BUILD_STRING             3
+           3102 LOAD_CONST              13 (True)
+           3104 KW_NAMES                14 (('unsafe_allow_html',))
+           3106 CALL                     2
+           3114 POP_TOP
+
+272        3116 BUILD_LIST               0
+           3118 LOAD_CONST             153 (('patient_id', 'full_name', 'age', 'gender', 'insurance_status', 'assigned_therapist_name', 'baseline_flight_risk_score'))
+           3120 LIST_EXTEND              1
+           3122 STORE_NAME              89 (display_cols)
+
+274        3124 LOAD_NAME               29 (patients_df)
+           3126 LOAD_NAME               89 (display_cols)
+           3128 BINARY_SUBSCR
+           3132 LOAD_ATTR              181 (NULL|self + rename)
+
+275        3152 LOAD_CONST             154 ('ID')
+           3154 LOAD_CONST             155 ('Name')
+           3156 LOAD_CONST              34 ('Age')
+
+276        3158 LOAD_CONST              40 ('Gender')
+           3160 LOAD_CONST             156 ('Insurance')
+
+277        3162 LOAD_CONST             157 ('Therapist')
+
+278        3164 LOAD_CONST             158 ('Risk Score')
+
+274        3166 LOAD_CONST             153 (('patient_id', 'full_name', 'age', 'gender', 'insurance_status', 'assigned_therapist_name', 'baseline_flight_risk_score'))
+           3168 BUILD_CONST_KEY_MAP      7
+           3170 KW_NAMES               159 (('columns',))
+           3172 CALL                     1
+           3180 STORE_NAME              91 (show_df)
+
+281        3182 LOAD_CONST             160 (<code object color_risk at 0x0000021AF95524F0, file ".\pages\1_matchmaker.py", line 281>)
+           3184 MAKE_FUNCTION            0
+           3186 STORE_NAME              92 (color_risk)
+
+286        3188 PUSH_NULL
+           3190 LOAD_NAME                9 (st)
+           3192 LOAD_ATTR              186 (dataframe)
+
+287        3212 LOAD_NAME               91 (show_df)
+           3214 LOAD_ATTR              188 (style)
+           3234 LOAD_ATTR              191 (NULL|self + applymap)
+           3254 LOAD_NAME               92 (color_risk)
+           3256 LOAD_CONST             158 ('Risk Score')
+           3258 BUILD_LIST               1
+           3260 KW_NAMES               161 (('subset',))
+           3262 CALL                     2
+
+288        3270 LOAD_CONST              13 (True)
+
+289        3272 LOAD_CONST             162 (420)
+
+286        3274 KW_NAMES               163 (('use_container_width', 'height'))
+           3276 CALL                     3
+           3284 POP_TOP
+
+155     >> 3286 LOAD_CONST               2 (None)
+           3288 LOAD_CONST               2 (None)
+           3290 LOAD_CONST               2 (None)
+           3292 CALL                     2
+           3300 POP_TOP
+           3302 RETURN_CONST             2 (None)
+
+122     >> 3304 PUSH_EXC_INFO
+           3306 WITH_EXCEPT_START
+           3308 POP_JUMP_IF_TRUE         1 (to 3312)
+           3310 RERAISE                  2
+        >> 3312 POP_TOP
+           3314 POP_EXCEPT
+           3316 POP_TOP
+           3318 POP_TOP
+           3320 EXTENDED_ARG             3
+           3322 JUMP_BACKWARD          988 (to 1348)
+        >> 3324 COPY                     3
+           3326 POP_EXCEPT
+           3328 RERAISE                  1
+
+157     >> 3330 PUSH_EXC_INFO
+           3332 WITH_EXCEPT_START
+           3334 POP_JUMP_IF_TRUE         1 (to 3338)
+           3336 RERAISE                  2
+        >> 3338 POP_TOP
+           3340 POP_EXCEPT
+           3342 POP_TOP
+           3344 POP_TOP
+           3346 EXTENDED_ARG             3
+           3348 JUMP_BACKWARD          935 (to 1480)
+        >> 3350 COPY                     3
+           3352 POP_EXCEPT
+           3354 RERAISE                  1
+
+176     >> 3356 PUSH_EXC_INFO
+           3358 WITH_EXCEPT_START
+           3360 POP_JUMP_IF_TRUE         1 (to 3364)
+           3362 RERAISE                  2
+        >> 3364 POP_TOP
+           3366 POP_EXCEPT
+           3368 POP_TOP
+           3370 POP_TOP
+           3372 EXTENDED_ARG             3
+           3374 JUMP_BACKWARD          849 (to 1678)
+        >> 3376 COPY                     3
+           3378 POP_EXCEPT
+           3380 RERAISE                  1
+
+178     >> 3382 PUSH_EXC_INFO
+           3384 WITH_EXCEPT_START
+           3386 POP_JUMP_IF_TRUE         1 (to 3390)
+           3388 RERAISE                  2
+        >> 3390 POP_TOP
+           3392 POP_EXCEPT
+           3394 POP_TOP
+           3396 POP_TOP
+           3398 EXTENDED_ARG             2
+           3400 JUMP_BACKWARD          726 (to 1950)
+        >> 3402 COPY                     3
+           3404 POP_EXCEPT
+           3406 RERAISE                  1
+
+246     >> 3408 PUSH_EXC_INFO
+           3410 WITH_EXCEPT_START
+           3412 POP_JUMP_IF_TRUE         1 (to 3416)
+           3414 RERAISE                  2
+        >> 3416 POP_TOP
+           3418 POP_EXCEPT
+           3420 POP_TOP
+           3422 POP_TOP
+           3424 EXTENDED_ARG             1
+           3426 JUMP_BACKWARD          357 (to 2714)
+        >> 3428 COPY                     3
+           3430 POP_EXCEPT
+           3432 RERAISE                  1
+
+155     >> 3434 PUSH_EXC_INFO
+           3436 WITH_EXCEPT_START
+           3438 POP_JUMP_IF_TRUE         1 (to 3442)
+           3440 RERAISE                  2
+        >> 3442 POP_TOP
+           3444 POP_EXCEPT
+           3446 POP_TOP
+           3448 POP_TOP
+           3450 RETURN_CONST             2 (None)
+        >> 3452 COPY                     3
+           3454 POP_EXCEPT
+           3456 RERAISE                  1
+ExceptionTable:
+  560 to 1330 -> 3304 [1] lasti
+  1352 to 1428 -> 3434 [1] lasti
+  1430 to 1462 -> 3330 [2] lasti
+  1464 to 1594 -> 3434 [1] lasti
+  1596 to 1660 -> 3356 [2] lasti
+  1662 to 1680 -> 3434 [1] lasti
+  1682 to 1932 -> 3382 [2] lasti
+  1934 to 2670 -> 3434 [1] lasti
+  2672 to 2696 -> 3408 [3] lasti
+  2698 to 3284 -> 3434 [1] lasti
+  3304 to 3312 -> 3324 [3] lasti
+  3330 to 3338 -> 3350 [4] lasti
+  3340 to 3354 -> 3434 [1] lasti
+  3356 to 3364 -> 3376 [4] lasti
+  3366 to 3380 -> 3434 [1] lasti
+  3382 to 3390 -> 3402 [4] lasti
+  3392 to 3406 -> 3434 [1] lasti
+  3408 to 3416 -> 3428 [5] lasti
+  3418 to 3432 -> 3434 [1] lasti
+  3434 to 3442 -> 3452 [3] lasti
+
+Disassembly of <code object assign_patient at 0x0000021AF94A9990, file ".\pages\1_matchmaker.py", line 15>:
+ 15           0 RESUME                   0
+
+ 16           2 LOAD_GLOBAL              0 (os)
+             12 LOAD_ATTR                2 (path)
+             32 LOAD_ATTR                5 (NULL|self + join)
+             52 LOAD_GLOBAL              6 (DATA_DIR)
+             62 LOAD_CONST               1 ('patients_intake.csv')
+             64 CALL                     2
+             72 STORE_FAST               3 (path)
+
+ 17          74 LOAD_GLOBAL              9 (NULL + pd)
+             84 LOAD_ATTR               10 (read_csv)
+            104 LOAD_FAST                3 (path)
+            106 CALL                     1
+            114 STORE_FAST               4 (df)
+
+ 19         116 LOAD_GLOBAL             13 (NULL + len)
+            126 LOAD_FAST                4 (df)
+            128 CALL                     1
+            136 LOAD_CONST               2 (1)
+            138 BINARY_OP                0 (+)
+            142 STORE_FAST               5 (new_num)
+
+ 20         144 LOAD_CONST               3 ('P')
+            146 LOAD_FAST                5 (new_num)
+            148 LOAD_CONST               4 ('03d')
+            150 FORMAT_VALUE             4 (with format)
+            152 BUILD_STRING             2
+            154 STORE_FAST               6 (new_id)
+
+ 22         156 LOAD_GLOBAL             14 (st)
+            166 LOAD_ATTR               16 (session_state)
+            186 LOAD_ATTR               19 (NULL|self + get)
+            206 LOAD_CONST               5 ('in_full_name')
+            208 LOAD_CONST               6 ('')
+            210 CALL                     2
+            218 STORE_FAST               7 (full_name)
+
+ 23         220 LOAD_GLOBAL             14 (st)
+            230 LOAD_ATTR               16 (session_state)
+            250 LOAD_ATTR               19 (NULL|self + get)
+            270 LOAD_CONST               7 ('in_phone')
+            272 LOAD_CONST               6 ('')
+            274 CALL                     2
+            282 STORE_FAST               8 (phone)
+
+ 24         284 LOAD_GLOBAL             14 (st)
+            294 LOAD_ATTR               16 (session_state)
+            314 LOAD_ATTR               19 (NULL|self + get)
+            334 LOAD_CONST               8 ('in_city')
+            336 LOAD_CONST               6 ('')
+            338 CALL                     2
+            346 STORE_FAST               9 (city)
+
+ 25         348 LOAD_GLOBAL             14 (st)
+            358 LOAD_ATTR               16 (session_state)
+            378 LOAD_ATTR               19 (NULL|self + get)
+            398 LOAD_CONST               9 ('in_age')
+            400 LOAD_CONST              10 (28)
+            402 CALL                     2
+            410 STORE_FAST              10 (age)
+
+ 26         412 LOAD_GLOBAL             14 (st)
+            422 LOAD_ATTR               16 (session_state)
+            442 LOAD_ATTR               19 (NULL|self + get)
+            462 LOAD_CONST              11 ('in_gender')
+            464 LOAD_CONST              12 ('Female')
+            466 CALL                     2
+            474 STORE_FAST              11 (gender)
+
+ 27         476 LOAD_GLOBAL             14 (st)
+            486 LOAD_ATTR               16 (session_state)
+            506 LOAD_ATTR               19 (NULL|self + get)
+            526 LOAD_CONST              13 ('in_insurance')
+            528 LOAD_CONST              14 ('Insured')
+            530 CALL                     2
+            538 STORE_FAST              12 (insurance)
+
+ 28         540 LOAD_GLOBAL             14 (st)
+            550 LOAD_ATTR               16 (session_state)
+            570 LOAD_ATTR               19 (NULL|self + get)
+            590 LOAD_CONST              15 ('in_pref_gender')
+            592 LOAD_CONST              16 ('No Preference')
+            594 CALL                     2
+            602 STORE_FAST              13 (pref_gender)
+
+ 29         604 LOAD_GLOBAL             14 (st)
+            614 LOAD_ATTR               16 (session_state)
+            634 LOAD_ATTR               19 (NULL|self + get)
+            654 LOAD_CONST              17 ('in_phq9')
+            656 LOAD_CONST              18 (10)
+            658 CALL                     2
+            666 STORE_FAST              14 (phq9)
+
+ 30         668 LOAD_GLOBAL             14 (st)
+            678 LOAD_ATTR               16 (session_state)
+            698 LOAD_ATTR               19 (NULL|self + get)
+            718 LOAD_CONST              19 ('in_gad7')
+            720 LOAD_CONST              18 (10)
+            722 CALL                     2
+            730 STORE_FAST              15 (gad7)
+
+ 31         732 LOAD_GLOBAL             14 (st)
+            742 LOAD_ATTR               16 (session_state)
+            762 LOAD_ATTR               19 (NULL|self + get)
+            782 LOAD_CONST              20 ('in_intake_text')
+            784 LOAD_CONST               6 ('')
+            786 CALL                     2
+            794 STORE_FAST              16 (intake_text)
+
+ 34         796 LOAD_FAST                6 (new_id)
+
+ 35         798 LOAD_FAST                7 (full_name)
+            800 POP_JUMP_IF_FALSE        2 (to 806)
+            802 LOAD_FAST                7 (full_name)
+            804 JUMP_FORWARD             1 (to 808)
+        >>  806 LOAD_CONST              21 ('Anonymous Patient')
+
+ 36     >>  808 LOAD_FAST               10 (age)
+
+ 37         810 LOAD_FAST               11 (gender)
+
+ 38         812 LOAD_FAST               12 (insurance)
+
+ 39         814 LOAD_FAST               14 (phq9)
+
+ 40         816 LOAD_FAST               15 (gad7)
+
+ 41         818 LOAD_FAST               13 (pref_gender)
+
+ 42         820 LOAD_FAST               16 (intake_text)
+            822 POP_JUMP_IF_FALSE       18 (to 860)
+            824 LOAD_FAST               16 (intake_text)
+            826 LOAD_ATTR               21 (NULL|self + replace)
+            846 LOAD_CONST              22 ('\n')
+            848 LOAD_CONST              23 (' ')
+            850 CALL                     2
+            858 JUMP_FORWARD             1 (to 862)
+        >>  860 LOAD_CONST               6 ('')
+
+ 43     >>  862 LOAD_FAST                0 (therapist_id)
+
+ 44         864 LOAD_FAST                1 (therapist_name)
+
+ 45         866 LOAD_GLOBAL             22 (datetime)
+            876 LOAD_ATTR               24 (date)
+            896 LOAD_ATTR               27 (NULL|self + today)
+            916 CALL                     0
+            924 LOAD_ATTR               29 (NULL|self + isoformat)
+            944 CALL                     0
+
+ 46         952 LOAD_FAST                8 (phone)
+            954 POP_JUMP_IF_FALSE        2 (to 960)
+            956 LOAD_FAST                8 (phone)
+            958 JUMP_FORWARD             1 (to 962)
+        >>  960 LOAD_CONST              24 ('+910000000000')
+
+ 47     >>  962 LOAD_FAST                9 (city)
+            964 POP_JUMP_IF_FALSE        2 (to 970)
+            966 LOAD_FAST                9 (city)
+            968 JUMP_FORWARD             1 (to 972)
+        >>  970 LOAD_CONST              25 ('Unknown')
+
+ 48     >>  972 LOAD_FAST                2 (risk_score)
+
+ 33         974 LOAD_CONST              26 (('patient_id', 'full_name', 'age', 'gender', 'insurance_status', 'baseline_phq9', 'baseline_gad7', 'therapist_pref_gender', 'intake_text', 'assigned_therapist_id', 'assigned_therapist_name', 'intake_date', 'phone', 'city', 'baseline_flight_risk_score'))
+            976 BUILD_CONST_KEY_MAP     15
+            978 STORE_FAST              17 (new_row)
+
+ 51         980 LOAD_GLOBAL              9 (NULL + pd)
+            990 LOAD_ATTR               30 (concat)
+           1010 LOAD_FAST                4 (df)
+           1012 LOAD_GLOBAL              9 (NULL + pd)
+           1022 LOAD_ATTR               32 (DataFrame)
+           1042 LOAD_FAST               17 (new_row)
+           1044 BUILD_LIST               1
+           1046 CALL                     1
+           1054 BUILD_LIST               2
+           1056 LOAD_CONST              27 (True)
+           1058 KW_NAMES                28 (('ignore_index',))
+           1060 CALL                     2
+           1068 STORE_FAST               4 (df)
+
+ 52        1070 LOAD_FAST                4 (df)
+           1072 LOAD_ATTR               35 (NULL|self + to_csv)
+           1092 LOAD_FAST                3 (path)
+           1094 LOAD_CONST              29 (False)
+           1096 KW_NAMES                30 (('index',))
+           1098 CALL                     2
+           1106 POP_TOP
+
+ 54        1108 LOAD_GLOBAL             14 (st)
+           1118 LOAD_ATTR               36 (cache_data)
+           1138 LOAD_ATTR               39 (NULL|self + clear)
+           1158 CALL                     0
+           1166 POP_TOP
+
+ 55        1168 LOAD_CONST              31 ('Successfully assigned ')
+           1170 LOAD_FAST                7 (full_name)
+           1172 COPY                     1
+           1174 POP_JUMP_IF_TRUE         2 (to 1180)
+           1176 POP_TOP
+           1178 LOAD_CONST              32 ('Patient')
+        >> 1180 FORMAT_VALUE             0
+           1182 LOAD_CONST              33 (' to ')
+           1184 LOAD_FAST                1 (therapist_name)
+           1186 FORMAT_VALUE             0
+           1188 LOAD_CONST              34 ('!')
+           1190 BUILD_STRING             5
+           1192 LOAD_GLOBAL             14 (st)
+           1202 LOAD_ATTR               16 (session_state)
+           1222 LOAD_CONST              35 ('assign_success')
+           1224 STORE_SUBSCR
+           1228 RETURN_CONST             0 (None)
+
+Disassembly of <code object color_risk at 0x0000021AF95524F0, file ".\pages\1_matchmaker.py", line 281>:
+281           0 RESUME                   0
+
+282           2 LOAD_FAST                0 (val)
+              4 LOAD_CONST               1 (60)
+              6 COMPARE_OP              92 (>=)
+             10 POP_JUMP_IF_FALSE        1 (to 14)
+             12 RETURN_CONST             2 ('color: #E63946; font-weight:700')
+
+283     >>   14 LOAD_FAST                0 (val)
+             16 LOAD_CONST               3 (35)
+             18 COMPARE_OP              92 (>=)
+             22 POP_JUMP_IF_FALSE        1 (to 26)
+             24 RETURN_CONST             4 ('color: #F4A261; font-weight:700')
+
+284     >>   26 RETURN_CONST             5 ('color: #52B788')

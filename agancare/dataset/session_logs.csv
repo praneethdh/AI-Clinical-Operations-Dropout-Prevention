@@ -1,0 +1,574 @@
+patient_id,session_number,session_date,days_since_last_session,no_show_count,srs_relationship,srs_goals,srs_approach,srs_overall,optional_feedback,phq9_this_session,therapist_id,did_dropout,status
+P001,1,2024-02-16,0,1,8.4,7.3,6.2,7.0,Fine. Going through a lot this week so hard to focus.,13.0,T01,0,Active
+P001,2,2024-02-20,6,1,7.6,8.0,7.2,7.5,,,T01,0,Active
+P001,3,2024-02-27,6,0,8.6,8.2,7.6,8.1,,,T01,0,Active
+P001,4,2024-03-08,9,0,8.2,4.8,7.4,7.9,,,T01,0,Active
+P001,5,2024-03-12,6,1,8.3,6.6,9.2,8.1,Finally talked about the thing I've been avoiding. Feel lighter.,8.0,T01,0,Active
+P001,6,2024-03-23,10,2,8.3,7.8,9.2,8.2,The homework was tough but I see why you gave it. Progress!,,T01,0,Active
+P001,7,2024-03-27,7,0,7.8,8.6,8.3,8.2,,,T01,0,Active
+P001,8,2024-04-06,10,1,9.0,9.1,9.4,9.2,,,T01,0,Active
+P001,9,2024-04-12,9,3,9.7,9.3,9.6,9.7,The reframing technique clicked today. I used it with my boss.,11.0,T01,0,Active
+P001,10,2024-04-20,10,3,10.0,10.0,8.9,9.5,The reframing technique clicked today. I used it with my boss.,,T01,0,Active
+P001,11,2024-04-27,10,0,10.0,7.9,10.0,10.0,The homework was tough but I see why you gave it. Progress!,,T01,0,Graduated
+P002,1,2024-10-14,0,1,8.5,8.7,8.8,8.5,The homework was tough but I see why you gave it. Progress!,12.0,T05,0,Active
+P002,2,2024-10-21,7,0,9.3,8.6,8.2,8.6,Finally talked about the thing I've been avoiding. Feel lighter.,,T05,0,Active
+P002,3,2024-10-31,10,0,8.8,8.9,9.3,8.8,Finally talked about the thing I've been avoiding. Feel lighter.,,T05,0,Active
+P002,4,2024-11-03,6,1,9.2,8.5,9.8,8.9,,,T05,0,Active
+P002,5,2024-11-14,10,3,9.0,8.9,9.0,9.0,The reframing technique clicked today. I used it with my boss.,10.0,T05,0,Active
+P002,6,2024-11-17,6,1,10.0,9.8,10.0,9.6,The reframing technique clicked today. I used it with my boss.,,T05,0,Active
+P002,7,2024-11-26,8,3,10.0,9.5,10.0,10.0,The homework was tough but I see why you gave it. Progress!,,T05,0,Active
+P003,1,2024-06-26,0,0,7.0,6.2,6.6,6.1,,17.0,T02,0,Active
+P003,2,2024-06-29,6,0,6.9,5.8,5.9,6.3,Fine. Going through a lot this week so hard to focus.,,T02,0,Active
+P003,3,2024-07-08,8,0,6.9,5.6,7.3,6.6,Okay session. Nothing dramatic.,,T02,0,Active
+P003,4,2024-07-13,6,0,7.3,5.9,7.0,7.1,Same as usual. Hope it builds over time.,,T02,0,Active
+P003,5,2024-07-24,10,2,7.6,6.1,6.7,7.1,,15.0,T02,0,Active
+P003,6,2024-07-27,6,3,8.6,7.3,8.0,8.2,The reframing technique clicked today. I used it with my boss.,,T02,0,Active
+P003,7,2024-08-06,9,2,8.5,6.4,7.4,8.1,,,T02,0,Active
+P003,8,2024-08-13,9,0,7.8,7.2,8.2,7.9,,,T02,0,Graduated
+P004,1,2024-05-16,0,1,9.4,9.0,8.8,9.2,Really felt heard today. The breathing exercise actually worked this week.,11.0,T03,0,Active
+P004,2,2024-05-21,6,0,9.5,9.6,8.9,8.9,Really felt heard today. The breathing exercise actually worked this week.,,T03,0,Active
+P004,3,2024-05-30,8,0,9.2,8.8,8.6,8.7,Finally talked about the thing I've been avoiding. Feel lighter.,,T03,0,Active
+P004,4,2024-06-07,9,2,7.1,6.2,6.9,6.7,,,T03,0,Active
+P004,5,2024-06-13,8,1,5.4,5.0,5.9,5.5,,14.0,T03,1,Dropped Out
+P005,1,2024-05-29,0,1,10.0,9.5,10.0,9.7,Feeling more in control. Session felt very focused.,4.0,T01,0,Active
+P005,2,2024-06-08,9,1,10.0,8.7,9.3,9.7,Feeling more in control. Session felt very focused.,,T01,0,Active
+P005,3,2024-06-12,6,0,10.0,8.4,10.0,10.0,Feeling more in control. Session felt very focused.,,T01,0,Active
+P005,4,2024-06-22,9,2,10.0,9.1,9.1,10.0,,,T01,0,Active
+P005,5,2024-06-28,8,3,10.0,9.4,10.0,10.0,Really felt heard today. The breathing exercise actually worked this week.,0.0,T01,0,Active
+P005,6,2024-07-06,9,0,10.0,9.5,10.0,10.0,Feeling more in control. Session felt very focused.,,T01,0,Active
+P005,7,2024-07-12,8,2,10.0,10.0,9.5,10.0,The homework was tough but I see why you gave it. Progress!,,T01,0,Active
+P005,8,2024-07-20,9,0,10.0,9.6,10.0,10.0,,,T01,0,Active
+P005,9,2024-07-27,9,0,10.0,8.1,8.7,9.5,You remembered what I said last time. That means a lot.,5.0,T01,0,Active
+P005,10,2024-08-04,10,2,10.0,8.5,10.0,9.6,,,T01,0,Active
+P005,11,2024-08-10,9,0,10.0,10.0,9.7,9.6,You remembered what I said last time. That means a lot.,,T01,0,Graduated
+P006,1,2024-02-11,0,1,10.0,10.0,9.0,10.0,,8.0,T02,0,Active
+P006,2,2024-02-16,6,0,9.7,7.9,9.9,10.0,You remembered what I said last time. That means a lot.,,T02,0,Active
+P006,3,2024-02-24,7,1,10.0,10.0,10.0,10.0,Really felt heard today. The breathing exercise actually worked this week.,,T02,0,Active
+P006,4,2024-03-05,10,1,10.0,8.4,9.1,10.0,The homework was tough but I see why you gave it. Progress!,,T02,0,Active
+P006,5,2024-03-09,7,0,10.0,9.8,10.0,10.0,,2.0,T02,0,Active
+P006,6,2024-03-15,6,1,10.0,8.4,10.0,9.9,,,T02,0,Active
+P007,1,2024-07-03,0,1,7.7,7.2,7.3,7.8,,6.0,T02,0,Active
+P007,2,2024-07-09,9,1,7.9,6.4,9.2,7.9,Fine. Going through a lot this week so hard to focus.,,T02,0,Active
+P007,3,2024-07-16,9,0,8.1,6.7,8.0,7.8,,,T02,0,Active
+P007,4,2024-07-21,7,2,8.3,7.4,8.6,8.1,Finally talked about the thing I've been avoiding. Feel lighter.,,T02,0,Active
+P007,5,2024-07-27,6,2,9.5,7.9,8.6,8.8,,3.0,T02,0,Active
+P007,6,2024-08-05,8,2,7.8,7.0,9.6,8.7,Really felt heard today. The breathing exercise actually worked this week.,,T02,0,Active
+P007,7,2024-08-12,8,2,10.0,8.5,9.6,9.2,,,T02,0,Active
+P007,8,2024-08-18,7,3,9.8,10.0,10.0,9.3,,,T02,0,Graduated
+P008,1,2024-08-27,0,1,7.2,8.0,7.7,7.3,,14.0,T02,0,Active
+P008,2,2024-09-01,8,0,6.8,6.3,6.6,7.0,Fine. Going through a lot this week so hard to focus.,,T02,0,Active
+P008,3,2024-09-10,10,1,7.0,7.6,8.6,7.4,Fine. Going through a lot this week so hard to focus.,,T02,0,Active
+P008,4,2024-09-16,9,0,7.0,7.4,7.1,7.4,Same as usual. Hope it builds over time.,,T02,0,Active
+P008,5,2024-09-23,9,3,7.2,6.1,6.7,7.1,,12.0,T02,0,Active
+P008,6,2024-09-28,7,3,7.0,6.8,7.2,7.1,Okay session. Nothing dramatic.,,T02,0,Active
+P008,7,2024-10-05,7,2,7.2,5.8,6.8,7.0,Okay session. Nothing dramatic.,,T02,0,Active
+P008,8,2024-10-14,9,0,8.7,7.9,7.5,8.0,,,T02,0,Active
+P008,9,2024-10-18,6,1,9.0,8.8,7.8,8.7,,13.0,T02,0,Active
+P008,10,2024-10-26,7,0,9.0,9.0,8.6,9.0,,,T02,0,Active
+P008,11,2024-11-03,8,2,9.3,8.1,10.0,9.9,,,T02,0,Active
+P008,12,2024-11-08,6,2,10.0,8.8,10.0,10.0,,,T02,0,Graduated
+P009,1,2024-05-20,0,0,7.1,3.6,5.7,6.1,,14.0,T03,0,Active
+P009,2,2024-05-23,6,0,6.5,5.2,6.2,5.9,Same as usual. Hope it builds over time.,,T03,0,Active
+P009,3,2024-05-31,7,0,5.9,5.5,5.9,5.9,,,T03,0,Active
+P009,4,2024-06-06,6,2,7.1,5.9,6.5,6.2,Okay session. Nothing dramatic.,,T03,0,Active
+P009,5,2024-06-16,9,1,6.3,5.3,6.0,6.2,Same as usual. Hope it builds over time.,13.0,T03,0,Active
+P009,6,2024-06-20,6,0,6.4,6.0,7.6,6.3,Same as usual. Hope it builds over time.,,T03,0,Active
+P009,7,2024-06-27,6,2,7.7,6.2,7.8,7.0,Same as usual. Hope it builds over time.,,T03,0,Active
+P009,8,2024-07-06,8,3,7.2,5.0,6.6,7.1,Fine. Going through a lot this week so hard to focus.,,T03,0,Active
+P009,9,2024-07-12,7,3,7.1,6.9,7.8,7.7,,15.0,T03,0,Active
+P009,10,2024-07-19,7,1,8.0,6.8,8.1,7.5,Fine. Going through a lot this week so hard to focus.,,T03,0,Active
+P009,11,2024-07-25,6,3,7.2,7.7,8.6,8.0,You remembered what I said last time. That means a lot.,,T03,0,Graduated
+P010,1,2024-05-15,0,1,7.2,5.9,6.4,6.8,Same as usual. Hope it builds over time.,10.0,T04,0,Active
+P010,2,2024-05-24,9,1,7.9,6.0,7.3,7.2,Okay session. Nothing dramatic.,,T04,0,Active
+P010,3,2024-05-31,9,1,7.4,7.2,7.6,7.3,,,T04,0,Active
+P010,4,2024-06-05,7,0,8.7,7.0,7.8,7.9,,,T04,0,Active
+P010,5,2024-06-13,8,2,8.9,8.2,9.4,9.1,,10.0,T04,0,Active
+P010,6,2024-06-20,8,3,9.3,9.7,10.0,9.5,The reframing technique clicked today. I used it with my boss.,,T04,0,Active
+P011,1,2024-03-13,0,0,7.7,6.6,7.4,7.1,Fine. Going through a lot this week so hard to focus.,23.0,T03,0,Active
+P011,2,2024-03-20,9,1,6.2,8.0,6.7,6.5,,,T03,0,Active
+P011,3,2024-03-26,8,1,6.1,5.8,6.1,5.7,Okay session. Nothing dramatic.,,T03,0,Active
+P011,4,2024-04-03,9,1,3.5,2.0,3.5,3.1,"I need help with my boss, not my childhood. Felt a bit off-track today.",,T03,0,Active
+P011,5,2024-04-11,10,1,4.3,3.7,4.2,3.1,,22.0,T03,1,Dropped Out
+P012,1,2024-02-02,0,1,4.7,5.4,5.3,5.2,Fine. Going through a lot this week so hard to focus.,18.0,T04,0,Active
+P012,2,2024-02-09,7,1,5.2,4.0,5.4,5.5,Fine. Going through a lot this week so hard to focus.,,T04,0,Active
+P012,3,2024-02-15,6,0,7.3,5.5,5.4,6.2,Same as usual. Hope it builds over time.,,T04,0,Active
+P012,4,2024-02-25,9,0,6.0,5.1,4.3,5.8,,,T04,0,Active
+P012,5,2024-03-02,8,1,7.0,6.0,7.2,6.7,Okay session. Nothing dramatic.,20.0,T04,0,Active
+P012,6,2024-03-09,8,2,7.8,6.2,6.3,6.9,,,T04,0,Active
+P012,7,2024-03-15,7,1,8.6,6.5,7.1,7.0,Fine. Going through a lot this week so hard to focus.,,T04,0,Active
+P012,8,2024-03-25,10,2,7.2,6.6,6.9,6.9,,,T04,0,Graduated
+P013,1,2024-05-16,0,1,7.8,7.5,5.9,7.0,,4.0,T01,0,Active
+P013,2,2024-05-24,8,1,7.4,6.5,6.6,7.3,Okay session. Nothing dramatic.,,T01,0,Active
+P013,3,2024-06-01,9,0,7.3,6.0,8.6,7.4,Fine. Going through a lot this week so hard to focus.,,T01,0,Active
+P013,4,2024-06-06,7,2,8.2,7.9,7.9,7.4,,,T01,0,Active
+P013,5,2024-06-16,10,2,7.4,6.8,8.1,7.7,Okay session. Nothing dramatic.,0.0,T01,0,Active
+P013,6,2024-06-22,9,0,8.6,7.2,7.8,7.9,Same as usual. Hope it builds over time.,,T01,0,Active
+P013,7,2024-06-30,10,0,9.5,8.7,8.7,8.8,,,T01,0,Active
+P013,8,2024-07-05,8,2,8.9,6.6,8.5,8.0,,,T01,0,Graduated
+P014,1,2024-03-31,0,0,6.3,6.8,6.1,6.8,,17.0,T03,0,Active
+P014,2,2024-04-07,6,1,8.4,5.0,8.3,7.2,,,T03,0,Active
+P014,3,2024-04-15,7,0,7.4,6.4,6.8,7.0,,,T03,0,Active
+P014,4,2024-04-23,8,2,8.2,7.2,8.5,7.7,,,T03,0,Active
+P014,5,2024-04-28,6,1,8.3,7.5,7.8,7.9,Okay session. Nothing dramatic.,15.0,T03,0,Active
+P014,6,2024-05-05,6,2,8.5,6.1,7.3,8.0,,,T03,0,Active
+P014,7,2024-05-12,6,0,9.4,8.3,8.7,8.7,You remembered what I said last time. That means a lot.,,T03,0,Active
+P014,8,2024-05-23,10,1,9.0,8.5,8.5,8.7,,,T03,0,Active
+P014,9,2024-05-29,9,2,8.3,8.1,7.9,8.4,,16.0,T03,0,Graduated
+P015,1,2024-09-30,0,0,5.9,5.0,6.2,6.5,,12.0,T02,0,Active
+P015,2,2024-10-08,10,1,7.3,6.9,6.7,7.0,Same as usual. Hope it builds over time.,,T02,0,Active
+P015,3,2024-10-11,6,1,7.8,6.3,7.1,7.4,Fine. Going through a lot this week so hard to focus.,,T02,0,Active
+P015,4,2024-10-21,9,1,7.7,6.9,7.4,8.1,You remembered what I said last time. That means a lot.,,T02,0,Active
+P015,5,2024-10-27,8,0,8.9,9.4,8.6,9.1,Feeling more in control. Session felt very focused.,15.0,T02,0,Active
+P015,6,2024-11-05,10,2,10.0,9.4,9.4,9.8,Really felt heard today. The breathing exercise actually worked this week.,,T02,0,Active
+P016,1,2024-01-29,0,1,9.5,7.3,9.5,8.3,The homework was tough but I see why you gave it. Progress!,11.0,T03,0,Active
+P016,2,2024-02-06,7,0,9.3,7.7,9.1,8.6,Really felt heard today. The breathing exercise actually worked this week.,,T03,0,Active
+P016,3,2024-02-14,8,0,10.0,9.9,9.1,9.9,Finally talked about the thing I've been avoiding. Feel lighter.,,T03,0,Active
+P016,4,2024-02-23,10,0,9.9,9.3,10.0,10.0,The homework was tough but I see why you gave it. Progress!,,T03,0,Active
+P016,5,2024-03-01,10,1,10.0,9.6,9.3,10.0,You remembered what I said last time. That means a lot.,10.0,T03,0,Active
+P016,6,2024-03-05,7,2,10.0,9.9,10.0,10.0,Finally talked about the thing I've been avoiding. Feel lighter.,,T03,0,Active
+P016,7,2024-03-15,10,0,10.0,9.9,10.0,10.0,The reframing technique clicked today. I used it with my boss.,,T03,0,Active
+P017,1,2024-08-31,0,1,6.6,6.3,6.4,6.3,Fine. Going through a lot this week so hard to focus.,5.0,T02,0,Active
+P017,2,2024-09-06,6,0,7.0,7.0,6.5,6.7,Fine. Going through a lot this week so hard to focus.,,T02,0,Active
+P017,3,2024-09-13,6,1,7.4,6.2,6.9,7.1,Fine. Going through a lot this week so hard to focus.,,T02,0,Active
+P017,4,2024-09-24,10,1,7.0,6.6,6.7,6.9,Okay session. Nothing dramatic.,,T02,0,Active
+P017,5,2024-09-28,7,2,7.7,5.6,6.8,6.8,Okay session. Nothing dramatic.,2.0,T02,0,Active
+P017,6,2024-10-05,7,3,8.5,7.2,8.2,7.5,,,T02,0,Active
+P018,1,2024-06-10,0,1,5.3,5.4,4.8,5.0,Still struggling with the same thing. Feeling stuck.,10.0,T05,0,Active
+P018,2,2024-06-18,10,1,5.5,5.8,4.4,4.5,,,T05,1,Dropped Out
+P019,1,2024-06-25,0,1,6.7,4.9,6.0,6.5,,18.0,T02,0,Active
+P019,2,2024-06-28,6,0,7.2,6.3,7.5,7.4,,,T02,0,Active
+P019,3,2024-07-08,9,1,7.9,8.2,7.0,7.5,Okay session. Nothing dramatic.,,T02,0,Active
+P019,4,2024-07-15,9,2,8.4,6.9,7.7,7.6,,,T02,0,Active
+P020,1,2024-02-05,0,1,5.0,4.5,4.9,4.6,Talked too much about the past. I want practical tools for right now.,15.0,T01,0,Active
+P020,2,2024-02-11,7,1,5.2,2.7,3.5,3.7,Still struggling with the same thing. Feeling stuck.,,T01,1,Dropped Out
+P021,1,2024-10-04,0,1,8.2,6.0,6.9,7.0,,13.0,T04,0,Active
+P021,2,2024-10-13,10,1,7.4,6.8,7.5,7.0,Okay session. Nothing dramatic.,,T04,0,Active
+P021,3,2024-10-16,6,0,9.1,7.2,7.4,7.8,,,T04,0,Active
+P021,4,2024-10-26,9,0,8.3,7.6,8.8,8.7,,,T04,0,Active
+P021,5,2024-11-01,8,3,10.0,7.9,9.0,8.8,,11.0,T04,0,Active
+P021,6,2024-11-09,9,0,9.7,10.0,8.6,8.8,Feeling more in control. Session felt very focused.,,T04,0,Active
+P021,7,2024-11-16,9,2,9.4,9.6,9.8,9.3,The reframing technique clicked today. I used it with my boss.,,T04,0,Active
+P021,8,2024-11-22,8,1,10.0,9.4,9.3,9.4,,,T04,0,Active
+P021,9,2024-11-27,6,0,10.0,10.0,10.0,10.0,The homework was tough but I see why you gave it. Progress!,12.0,T04,0,Active
+P021,10,2024-12-04,6,3,10.0,10.0,10.0,10.0,The homework was tough but I see why you gave it. Progress!,,T04,0,Active
+P021,11,2024-12-13,8,1,10.0,9.1,9.9,9.7,Really felt heard today. The breathing exercise actually worked this week.,,T04,0,Active
+P021,12,2024-12-22,10,2,10.0,8.8,10.0,10.0,The homework was tough but I see why you gave it. Progress!,,T04,0,Graduated
+P022,1,2024-08-10,0,0,6.8,4.7,5.6,5.4,Same as usual. Hope it builds over time.,18.0,T01,0,Active
+P022,2,2024-08-18,10,1,6.2,6.6,5.8,5.8,Same as usual. Hope it builds over time.,,T01,0,Active
+P022,3,2024-08-21,6,0,6.1,5.7,5.9,5.7,Fine. Going through a lot this week so hard to focus.,,T01,0,Active
+P022,4,2024-08-31,9,0,5.6,5.2,6.2,5.5,Okay session. Nothing dramatic.,,T01,0,Active
+P022,5,2024-09-06,8,2,4.4,4.2,4.3,4.6,Talked too much about the past. I want practical tools for right now.,20.0,T01,0,Active
+P022,6,2024-09-13,8,1,3.5,3.1,4.3,4.0,Hard to open up today. Not sure why.,,T01,0,Active
+P022,7,2024-09-22,10,1,4.4,2.7,3.1,3.3,I don't think the technique is working for me. Need a different approach?,,T01,1,Dropped Out
+P023,1,2024-07-26,0,1,6.8,7.1,7.2,7.0,Same as usual. Hope it builds over time.,19.0,T01,0,Active
+P023,2,2024-07-31,6,0,5.7,4.2,6.3,5.7,Fine. Going through a lot this week so hard to focus.,,T01,0,Active
+P023,3,2024-08-11,10,1,5.5,4.3,6.1,4.9,Talked too much about the past. I want practical tools for right now.,,T01,0,Active
+P023,4,2024-08-15,7,2,3.1,1.6,3.0,3.3,"I need help with my boss, not my childhood. Felt a bit off-track today.",,T01,1,Dropped Out
+P024,1,2024-04-03,0,1,6.8,5.7,6.3,5.9,,15.0,T02,0,Active
+P024,2,2024-04-12,9,1,6.2,5.5,6.1,5.6,Fine. Going through a lot this week so hard to focus.,,T02,0,Active
+P024,3,2024-04-18,8,1,6.6,5.3,6.1,5.6,Same as usual. Hope it builds over time.,,T02,0,Active
+P024,4,2024-04-27,10,2,5.1,5.5,4.5,4.8,Talked too much about the past. I want practical tools for right now.,,T02,0,Active
+P024,5,2024-04-30,6,1,6.0,4.3,4.0,4.8,Didn't feel like we got anywhere today. A bit frustrated.,15.0,T02,0,Active
+P024,6,2024-05-11,10,1,3.5,3.7,3.2,3.5,Talked too much about the past. I want practical tools for right now.,,T02,1,Dropped Out
+P025,1,2024-10-05,0,1,4.3,4.0,4.6,4.5,,21.0,T01,0,Active
+P025,2,2024-10-12,9,1,3.8,4.8,4.7,4.1,The session felt rushed. Didn't get to the main thing I wanted to discuss.,,T01,0,Active
+P025,3,2024-10-20,10,0,2.9,2.2,2.9,2.7,Still struggling with the same thing. Feeling stuck.,,T01,0,Active
+P025,4,2024-10-26,9,0,1.0,1.0,1.4,1.7,I don't think the technique is working for me. Need a different approach?,,T01,0,Active
+P025,5,2024-11-03,10,3,1.7,1.2,3.1,1.9,I don't think the technique is working for me. Need a different approach?,22.0,T01,0,Active
+P025,6,2024-11-06,6,1,1.3,1.3,2.2,1.3,Hard to open up today. Not sure why.,,T01,0,Active
+P025,7,2024-11-17,10,1,1.8,1.0,1.0,1.0,"I need help with my boss, not my childhood. Felt a bit off-track today.",,T01,1,Dropped Out
+P026,1,2024-03-25,0,1,10.0,7.6,9.8,8.7,The reframing technique clicked today. I used it with my boss.,14.0,T04,0,Active
+P026,2,2024-04-02,8,0,9.8,8.4,9.2,9.4,Really felt heard today. The breathing exercise actually worked this week.,,T04,0,Active
+P026,3,2024-04-10,9,1,10.0,9.8,10.0,10.0,Finally talked about the thing I've been avoiding. Feel lighter.,,T04,0,Active
+P026,4,2024-04-15,7,1,10.0,9.5,10.0,10.0,You remembered what I said last time. That means a lot.,,T04,0,Active
+P026,5,2024-04-25,10,2,10.0,9.8,10.0,10.0,The homework was tough but I see why you gave it. Progress!,12.0,T04,0,Active
+P026,6,2024-05-01,9,0,10.0,8.7,9.9,10.0,,,T04,0,Active
+P026,7,2024-05-05,6,3,9.5,9.8,10.0,10.0,The homework was tough but I see why you gave it. Progress!,,T04,0,Active
+P027,1,2024-03-23,0,1,8.6,7.9,7.1,7.9,,4.0,T05,0,Active
+P027,2,2024-03-28,8,0,8.7,8.3,7.4,7.7,,,T05,0,Active
+P027,3,2024-04-02,6,1,7.9,7.3,7.7,7.4,Fine. Going through a lot this week so hard to focus.,,T05,0,Active
+P027,4,2024-04-13,10,1,7.8,6.8,7.9,7.8,Same as usual. Hope it builds over time.,,T05,0,Active
+P027,5,2024-04-16,6,3,9.4,8.4,8.4,8.5,The homework was tough but I see why you gave it. Progress!,4.0,T05,0,Active
+P027,6,2024-04-24,7,3,8.4,9.9,8.6,9.5,,,T05,0,Active
+P027,7,2024-05-04,10,0,9.7,8.2,8.9,9.6,,,T05,0,Active
+P027,8,2024-05-09,8,2,10.0,9.1,10.0,10.0,You remembered what I said last time. That means a lot.,,T05,0,Active
+P027,9,2024-05-16,8,1,10.0,9.9,10.0,10.0,The homework was tough but I see why you gave it. Progress!,0.0,T05,0,Active
+P027,10,2024-05-25,10,0,10.0,9.1,9.2,10.0,You remembered what I said last time. That means a lot.,,T05,0,Graduated
+P028,1,2024-01-27,0,0,6.9,5.8,6.5,6.5,Fine. Going through a lot this week so hard to focus.,21.0,T03,0,Active
+P028,2,2024-02-01,6,0,7.4,6.6,7.6,7.1,Same as usual. Hope it builds over time.,,T03,0,Active
+P028,3,2024-02-09,7,0,7.6,7.4,7.4,7.3,,,T03,0,Active
+P028,4,2024-02-16,7,2,7.8,5.4,8.1,7.5,Okay session. Nothing dramatic.,,T03,0,Active
+P028,5,2024-02-23,7,3,8.2,8.0,6.1,7.7,,23.0,T03,0,Active
+P028,6,2024-03-04,10,3,9.0,9.2,8.3,8.8,Feeling more in control. Session felt very focused.,,T03,0,Active
+P028,7,2024-03-09,8,1,9.9,8.0,9.0,9.3,,,T03,0,Active
+P028,8,2024-03-14,6,3,10.0,9.1,10.0,9.8,,,T03,0,Active
+P028,9,2024-03-23,8,2,10.0,9.9,10.0,10.0,Really felt heard today. The breathing exercise actually worked this week.,20.0,T03,0,Graduated
+P029,1,2024-02-05,0,1,10.0,8.6,10.0,10.0,,11.0,T01,0,Active
+P029,2,2024-02-10,6,0,9.7,9.7,9.6,10.0,Feeling more in control. Session felt very focused.,,T01,0,Active
+P029,3,2024-02-19,8,0,10.0,9.8,10.0,10.0,The homework was tough but I see why you gave it. Progress!,,T01,0,Active
+P029,4,2024-02-28,10,2,10.0,10.0,10.0,10.0,,,T01,0,Active
+P029,5,2024-03-05,9,0,10.0,10.0,10.0,10.0,,7.0,T01,0,Active
+P030,1,2024-01-22,0,1,8.5,7.0,9.8,8.7,Finally talked about the thing I've been avoiding. Feel lighter.,11.0,T02,0,Active
+P030,2,2024-01-27,6,1,8.8,7.6,7.7,8.9,The homework was tough but I see why you gave it. Progress!,,T02,0,Active
+P030,3,2024-02-05,8,0,9.8,8.2,10.0,9.8,Finally talked about the thing I've been avoiding. Feel lighter.,,T02,0,Active
+P030,4,2024-02-10,6,0,10.0,8.9,10.0,10.0,,,T02,0,Active
+P030,5,2024-02-20,9,1,10.0,9.2,8.6,10.0,Feeling more in control. Session felt very focused.,14.0,T02,0,Active
+P030,6,2024-02-26,8,2,9.6,8.2,10.0,10.0,,,T02,0,Active
+P030,7,2024-03-05,9,2,10.0,10.0,10.0,10.0,Really felt heard today. The breathing exercise actually worked this week.,,T02,0,Active
+P031,1,2024-05-01,0,1,7.0,5.8,7.4,7.2,Okay session. Nothing dramatic.,18.0,T02,0,Active
+P031,2,2024-05-12,10,1,8.8,8.0,7.0,7.8,Same as usual. Hope it builds over time.,,T02,0,Active
+P031,3,2024-05-17,8,0,8.0,8.5,7.7,8.2,Feeling more in control. Session felt very focused.,,T02,0,Active
+P031,4,2024-05-22,6,2,8.7,8.4,8.0,8.5,Finally talked about the thing I've been avoiding. Feel lighter.,,T02,0,Active
+P031,5,2024-05-31,8,2,9.2,7.2,8.5,8.8,,17.0,T02,0,Active
+P031,6,2024-06-06,7,0,8.3,8.7,8.9,8.8,The reframing technique clicked today. I used it with my boss.,,T02,0,Active
+P031,7,2024-06-16,10,3,9.6,8.7,9.9,9.0,Feeling more in control. Session felt very focused.,,T02,0,Active
+P031,8,2024-06-20,7,0,9.0,7.8,8.8,8.6,,,T02,0,Active
+P031,9,2024-06-30,10,2,9.5,8.4,9.0,8.9,Really felt heard today. The breathing exercise actually worked this week.,15.0,T02,0,Graduated
+P032,1,2024-10-15,0,1,6.7,7.0,6.2,6.5,,12.0,T01,0,Active
+P032,2,2024-10-22,7,0,7.9,6.3,8.9,7.5,Fine. Going through a lot this week so hard to focus.,,T01,0,Active
+P032,3,2024-10-29,7,0,7.0,7.0,7.8,7.3,Same as usual. Hope it builds over time.,,T01,0,Active
+P032,4,2024-11-04,6,2,7.8,6.7,7.3,7.3,,,T01,0,Active
+P032,5,2024-11-15,10,0,7.6,6.7,8.0,7.3,Same as usual. Hope it builds over time.,14.0,T01,0,Active
+P032,6,2024-11-22,10,1,8.0,6.4,8.0,8.0,,,T01,0,Active
+P033,1,2024-07-11,0,0,8.7,7.9,8.4,8.6,,15.0,T01,0,Active
+P033,2,2024-07-14,6,1,9.4,8.6,9.0,9.6,Feeling more in control. Session felt very focused.,,T01,0,Active
+P033,3,2024-07-22,7,1,10.0,8.9,10.0,10.0,The reframing technique clicked today. I used it with my boss.,,T01,0,Active
+P033,4,2024-07-31,9,0,9.5,9.8,10.0,10.0,You remembered what I said last time. That means a lot.,,T01,0,Active
+P033,5,2024-08-06,8,3,9.3,9.8,10.0,10.0,You remembered what I said last time. That means a lot.,11.0,T01,0,Active
+P033,6,2024-08-13,8,3,10.0,9.8,9.7,10.0,,,T01,0,Active
+P034,1,2024-10-13,0,1,8.7,7.9,7.3,7.9,Fine. Going through a lot this week so hard to focus.,6.0,T05,0,Active
+P034,2,2024-10-17,7,0,8.3,8.7,8.4,8.2,The reframing technique clicked today. I used it with my boss.,,T05,0,Active
+P034,3,2024-10-23,6,1,10.0,8.5,8.9,8.7,Feeling more in control. Session felt very focused.,,T05,0,Active
+P034,4,2024-11-03,10,0,8.7,8.2,8.6,8.6,The homework was tough but I see why you gave it. Progress!,,T05,0,Active
+P034,5,2024-11-08,8,0,9.7,9.3,8.6,9.0,Finally talked about the thing I've been avoiding. Feel lighter.,1.0,T05,0,Active
+P034,6,2024-11-15,8,3,8.1,8.6,8.1,8.7,Finally talked about the thing I've been avoiding. Feel lighter.,,T05,0,Active
+P034,7,2024-11-23,9,0,8.2,8.8,10.0,9.0,You remembered what I said last time. That means a lot.,,T05,0,Active
+P034,8,2024-11-30,9,2,9.2,9.1,9.0,8.9,Really felt heard today. The breathing exercise actually worked this week.,,T05,0,Active
+P034,9,2024-12-07,9,0,9.2,9.1,8.8,8.9,,5.0,T05,0,Active
+P034,10,2024-12-15,10,2,10.0,8.7,10.0,9.7,You remembered what I said last time. That means a lot.,,T05,0,Graduated
+P035,1,2024-05-20,0,0,8.1,7.2,7.4,7.3,Okay session. Nothing dramatic.,9.0,T05,0,Active
+P035,2,2024-05-27,8,0,8.5,8.4,8.2,7.8,Same as usual. Hope it builds over time.,,T05,0,Active
+P035,3,2024-06-02,7,0,8.0,6.2,7.2,7.7,Okay session. Nothing dramatic.,,T05,0,Active
+P035,4,2024-06-10,8,1,8.1,7.0,8.0,8.0,Finally talked about the thing I've been avoiding. Feel lighter.,,T05,0,Active
+P035,5,2024-06-18,9,3,8.6,8.2,8.4,8.3,Really felt heard today. The breathing exercise actually worked this week.,8.0,T05,0,Active
+P036,1,2024-05-09,0,0,6.2,6.3,6.4,5.6,Fine. Going through a lot this week so hard to focus.,23.0,T05,0,Active
+P036,2,2024-05-18,10,1,5.7,6.2,5.7,5.5,Okay session. Nothing dramatic.,,T05,0,Active
+P036,3,2024-05-23,8,0,5.8,4.7,5.6,5.7,Same as usual. Hope it builds over time.,,T05,0,Active
+P036,4,2024-05-28,6,0,5.6,5.1,5.7,5.5,Fine. Going through a lot this week so hard to focus.,,T05,0,Active
+P037,1,2024-08-13,0,0,8.7,7.0,6.5,8.0,,13.0,T03,0,Active
+P037,2,2024-08-24,10,0,8.8,8.6,8.0,8.8,You remembered what I said last time. That means a lot.,,T03,0,Active
+P037,3,2024-08-28,7,1,9.9,9.0,9.9,9.5,,,T03,0,Active
+P037,4,2024-09-03,6,2,9.6,7.9,10.0,9.2,Feeling more in control. Session felt very focused.,,T03,0,Active
+P037,5,2024-09-11,7,3,8.7,8.0,8.0,8.5,Finally talked about the thing I've been avoiding. Feel lighter.,10.0,T03,0,Active
+P037,6,2024-09-17,6,2,9.1,8.6,10.0,9.2,The homework was tough but I see why you gave it. Progress!,,T03,0,Active
+P037,7,2024-09-28,10,0,8.6,7.2,10.0,9.0,,,T03,0,Active
+P037,8,2024-10-04,9,0,9.4,8.2,9.9,9.2,,,T03,0,Active
+P037,9,2024-10-10,8,2,9.0,10.0,9.5,9.0,Really felt heard today. The breathing exercise actually worked this week.,10.0,T03,0,Active
+P037,10,2024-10-17,8,0,10.0,7.6,9.1,8.6,Feeling more in control. Session felt very focused.,,T03,0,Active
+P037,11,2024-10-23,7,0,9.5,9.6,10.0,9.1,Feeling more in control. Session felt very focused.,,T03,0,Graduated
+P038,1,2024-01-22,0,1,7.3,6.1,7.1,6.9,Fine. Going through a lot this week so hard to focus.,14.0,T02,0,Active
+P038,2,2024-01-28,9,1,6.5,5.6,7.7,6.9,Fine. Going through a lot this week so hard to focus.,,T02,0,Active
+P038,3,2024-02-02,7,1,5.2,3.9,5.6,5.2,,,T02,0,Active
+P038,4,2024-02-08,6,1,6.5,5.7,6.3,5.6,Fine. Going through a lot this week so hard to focus.,,T02,1,Dropped Out
+P039,1,2024-04-16,0,1,4.5,4.9,4.7,4.3,I don't think the technique is working for me. Need a different approach?,15.0,T01,0,Active
+P039,2,2024-04-27,10,1,4.8,5.5,4.0,4.3,,,T01,0,Active
+P039,3,2024-05-02,8,1,3.6,2.3,3.1,2.8,The session felt rushed. Didn't get to the main thing I wanted to discuss.,,T01,1,Dropped Out
+P040,1,2024-05-02,0,1,7.5,5.9,6.3,6.7,Okay session. Nothing dramatic.,19.0,T05,0,Active
+P040,2,2024-05-09,8,1,5.7,3.8,7.2,5.9,,,T05,1,Dropped Out
+P041,1,2024-05-17,0,0,7.1,6.7,7.1,6.6,,9.0,T04,0,Active
+P041,2,2024-05-25,9,1,7.7,6.4,6.1,6.8,,,T04,0,Active
+P041,3,2024-05-31,8,0,7.7,6.2,7.0,7.2,,,T04,0,Active
+P041,4,2024-06-05,6,1,8.4,8.3,7.9,7.8,,,T04,0,Active
+P041,5,2024-06-13,7,2,8.9,9.3,8.6,8.4,Feeling more in control. Session felt very focused.,12.0,T04,0,Active
+P041,6,2024-06-19,6,0,9.1,6.6,9.1,8.5,Feeling more in control. Session felt very focused.,,T04,0,Active
+P041,7,2024-06-28,8,2,9.2,9.2,9.2,8.7,,,T04,0,Active
+P041,8,2024-07-07,10,3,9.3,7.6,9.1,9.1,Finally talked about the thing I've been avoiding. Feel lighter.,,T04,0,Active
+P041,9,2024-07-13,9,2,9.2,8.3,9.8,9.3,,10.0,T04,0,Active
+P041,10,2024-07-17,6,2,10.0,8.5,10.0,10.0,,,T04,0,Graduated
+P042,1,2024-06-27,0,1,5.8,4.4,6.0,5.5,Same as usual. Hope it builds over time.,16.0,T02,0,Active
+P042,2,2024-07-08,10,1,4.4,4.0,3.8,4.2,"I need help with my boss, not my childhood. Felt a bit off-track today.",,T02,1,Dropped Out
+P043,1,2024-02-07,0,0,6.9,5.4,6.5,7.3,Fine. Going through a lot this week so hard to focus.,11.0,T03,0,Active
+P043,2,2024-02-11,6,0,7.8,6.0,8.5,6.9,Same as usual. Hope it builds over time.,,T03,0,Active
+P043,3,2024-02-20,8,1,7.6,7.2,8.6,7.6,,,T03,0,Active
+P043,4,2024-02-25,6,2,8.5,8.3,8.0,7.2,Fine. Going through a lot this week so hard to focus.,,T03,0,Active
+P043,5,2024-03-06,9,2,7.0,6.2,6.8,6.2,Same as usual. Hope it builds over time.,10.0,T03,0,Active
+P043,6,2024-03-13,9,1,5.6,5.2,5.7,5.7,,,T03,1,Dropped Out
+P044,1,2024-10-26,0,1,6.8,6.4,6.8,7.1,Same as usual. Hope it builds over time.,6.0,T03,0,Active
+P044,2,2024-10-31,7,0,6.8,6.8,7.4,7.4,Okay session. Nothing dramatic.,,T03,0,Active
+P044,3,2024-11-07,7,1,7.4,6.3,5.8,6.3,,,T03,0,Active
+P044,4,2024-11-16,9,2,7.5,6.8,6.7,6.3,Okay session. Nothing dramatic.,,T03,1,Dropped Out
+P045,1,2024-09-20,0,0,5.1,5.5,5.7,5.7,,16.0,T04,0,Active
+P045,2,2024-09-26,8,1,6.0,4.1,6.3,5.9,Fine. Going through a lot this week so hard to focus.,,T04,0,Active
+P045,3,2024-10-01,6,0,6.6,5.2,5.0,6.6,Okay session. Nothing dramatic.,,T04,0,Active
+P045,4,2024-10-11,9,0,8.0,8.6,8.8,7.7,,,T04,0,Active
+P045,5,2024-10-15,6,2,8.7,7.6,9.0,8.6,Feeling more in control. Session felt very focused.,12.0,T04,0,Active
+P045,6,2024-10-22,6,2,9.2,8.8,9.5,8.7,The reframing technique clicked today. I used it with my boss.,,T04,0,Active
+P045,7,2024-10-30,7,1,8.8,7.9,8.2,8.6,Feeling more in control. Session felt very focused.,,T04,0,Active
+P045,8,2024-11-09,10,1,8.9,8.3,9.3,9.0,The homework was tough but I see why you gave it. Progress!,,T04,0,Graduated
+P046,1,2024-04-10,0,1,9.1,8.5,8.3,8.4,Really felt heard today. The breathing exercise actually worked this week.,10.0,T05,0,Active
+P046,2,2024-04-18,8,1,9.6,9.2,8.5,9.3,,,T05,0,Active
+P046,3,2024-04-27,10,0,9.5,9.6,8.8,9.5,The homework was tough but I see why you gave it. Progress!,,T05,0,Active
+P046,4,2024-04-30,6,1,10.0,8.2,10.0,9.8,,,T05,0,Active
+P046,5,2024-05-10,9,3,10.0,8.0,10.0,9.8,,7.0,T05,0,Active
+P046,6,2024-05-18,10,0,9.0,8.8,9.9,9.1,Finally talked about the thing I've been avoiding. Feel lighter.,,T05,0,Active
+P047,1,2024-06-09,0,1,6.7,6.4,6.3,6.8,,7.0,T03,0,Active
+P047,2,2024-06-15,8,0,6.1,7.1,7.9,7.3,,,T03,0,Active
+P047,3,2024-06-24,10,0,7.0,6.6,8.4,7.9,Fine. Going through a lot this week so hard to focus.,,T03,0,Active
+P047,4,2024-06-30,9,2,9.6,7.8,8.0,8.3,Really felt heard today. The breathing exercise actually worked this week.,,T03,0,Active
+P047,5,2024-07-04,6,1,8.7,9.1,8.2,8.5,The reframing technique clicked today. I used it with my boss.,3.0,T03,0,Active
+P048,1,2024-03-30,0,1,7.1,9.0,7.2,6.9,,5.0,T04,0,Active
+P048,2,2024-04-07,8,0,7.1,6.4,8.0,7.2,Same as usual. Hope it builds over time.,,T04,0,Active
+P048,3,2024-04-13,7,1,8.5,6.4,8.8,8.1,Finally talked about the thing I've been avoiding. Feel lighter.,,T04,0,Active
+P048,4,2024-04-21,8,2,8.5,9.5,9.2,8.5,The homework was tough but I see why you gave it. Progress!,,T04,0,Active
+P048,5,2024-04-30,10,1,8.8,9.2,8.8,8.7,Finally talked about the thing I've been avoiding. Feel lighter.,5.0,T04,0,Active
+P048,6,2024-05-04,7,2,9.4,7.7,8.6,8.9,Really felt heard today. The breathing exercise actually worked this week.,,T04,0,Active
+P048,7,2024-05-10,6,0,9.4,7.8,8.5,8.6,Really felt heard today. The breathing exercise actually worked this week.,,T04,0,Active
+P048,8,2024-05-21,10,2,9.1,9.1,10.0,9.3,You remembered what I said last time. That means a lot.,,T04,0,Active
+P048,9,2024-05-28,10,3,9.4,9.1,10.0,9.6,Really felt heard today. The breathing exercise actually worked this week.,3.0,T04,0,Graduated
+P049,1,2024-08-09,0,1,6.8,7.0,5.9,6.4,,17.0,T03,0,Active
+P049,2,2024-08-15,7,1,7.8,7.5,6.9,6.9,Same as usual. Hope it builds over time.,,T03,0,Active
+P049,3,2024-08-24,9,0,6.3,6.1,8.0,7.1,Okay session. Nothing dramatic.,,T03,0,Active
+P049,4,2024-08-29,7,1,8.1,6.5,7.6,7.8,,,T03,0,Active
+P049,5,2024-09-07,9,3,9.3,8.5,8.6,8.6,You remembered what I said last time. That means a lot.,14.0,T03,0,Active
+P049,6,2024-09-13,8,1,10.0,8.7,10.0,9.9,Feeling more in control. Session felt very focused.,,T03,0,Active
+P049,7,2024-09-20,8,2,10.0,10.0,10.0,10.0,,,T03,0,Active
+P049,8,2024-09-26,7,2,10.0,9.2,10.0,10.0,The homework was tough but I see why you gave it. Progress!,,T03,0,Active
+P049,9,2024-10-04,8,1,10.0,8.8,10.0,10.0,,13.0,T03,0,Active
+P049,10,2024-10-09,6,2,10.0,9.1,10.0,10.0,,,T03,0,Active
+P049,11,2024-10-17,7,1,10.0,9.3,10.0,10.0,The homework was tough but I see why you gave it. Progress!,,T03,0,Active
+P049,12,2024-10-23,6,2,10.0,10.0,9.3,10.0,,,T03,0,Graduated
+P050,1,2024-03-27,0,0,7.4,7.2,8.4,7.2,Same as usual. Hope it builds over time.,16.0,T05,0,Active
+P050,2,2024-04-06,10,1,7.3,5.8,7.9,7.1,Fine. Going through a lot this week so hard to focus.,,T05,0,Active
+P050,3,2024-04-10,7,1,7.3,4.9,7.7,7.1,,,T05,0,Active
+P050,4,2024-04-19,9,1,7.6,7.0,7.9,7.6,Same as usual. Hope it builds over time.,,T05,0,Active
+P050,5,2024-04-26,9,0,8.4,8.1,7.8,8.0,The homework was tough but I see why you gave it. Progress!,15.0,T05,0,Active
+P050,6,2024-05-03,9,3,8.6,8.5,8.9,8.4,You remembered what I said last time. That means a lot.,,T05,0,Active
+P050,7,2024-05-08,7,2,8.7,9.3,8.7,8.9,Really felt heard today. The breathing exercise actually worked this week.,,T05,0,Active
+P050,8,2024-05-14,6,2,10.0,9.3,10.0,9.5,,,T05,0,Active
+P050,9,2024-05-25,10,3,10.0,9.2,10.0,10.0,The reframing technique clicked today. I used it with my boss.,13.0,T05,0,Active
+P050,10,2024-06-01,10,0,10.0,8.2,9.5,10.0,The homework was tough but I see why you gave it. Progress!,,T05,0,Graduated
+P051,1,2024-04-12,0,1,6.4,5.5,5.8,5.6,Same as usual. Hope it builds over time.,15.0,T03,0,Active
+P051,2,2024-04-17,6,1,7.4,3.9,7.1,6.6,Okay session. Nothing dramatic.,,T03,0,Active
+P051,3,2024-04-28,10,0,6.9,4.9,7.3,6.9,Same as usual. Hope it builds over time.,,T03,0,Active
+P051,4,2024-05-05,10,1,8.1,6.5,7.8,7.1,Okay session. Nothing dramatic.,,T03,0,Active
+P051,5,2024-05-11,9,3,8.5,8.0,8.5,7.4,,14.0,T03,0,Active
+P051,6,2024-05-17,8,0,8.5,6.4,8.2,8.2,Finally talked about the thing I've been avoiding. Feel lighter.,,T03,0,Active
+P051,7,2024-05-22,6,3,8.0,9.3,8.1,8.1,Feeling more in control. Session felt very focused.,,T03,0,Active
+P051,8,2024-05-31,8,2,8.9,8.4,8.6,8.5,Finally talked about the thing I've been avoiding. Feel lighter.,,T03,0,Graduated
+P052,1,2024-10-23,0,0,8.1,6.1,7.7,7.8,Okay session. Nothing dramatic.,15.0,T04,0,Active
+P052,2,2024-10-27,6,0,8.1,8.0,9.1,8.2,Feeling more in control. Session felt very focused.,,T04,0,Active
+P052,3,2024-11-06,9,1,7.6,7.8,8.2,8.2,Finally talked about the thing I've been avoiding. Feel lighter.,,T04,0,Active
+P052,4,2024-11-14,10,2,8.6,7.7,7.6,8.0,Finally talked about the thing I've been avoiding. Feel lighter.,,T04,0,Active
+P052,5,2024-11-19,8,2,8.2,7.0,8.8,8.1,Finally talked about the thing I've been avoiding. Feel lighter.,13.0,T04,0,Active
+P052,6,2024-11-27,9,2,9.7,7.9,8.1,8.4,Feeling more in control. Session felt very focused.,,T04,0,Active
+P052,7,2024-12-05,10,3,8.0,6.6,7.6,8.5,The reframing technique clicked today. I used it with my boss.,,T04,0,Active
+P052,8,2024-12-11,9,0,8.9,8.4,7.7,8.5,Feeling more in control. Session felt very focused.,,T04,0,Active
+P052,9,2024-12-17,8,0,8.9,7.3,8.4,8.2,,16.0,T04,0,Active
+P052,10,2024-12-26,10,2,9.2,7.8,8.1,8.5,Really felt heard today. The breathing exercise actually worked this week.,,T04,0,Active
+P052,11,2025-01-02,10,3,7.4,7.1,8.2,8.2,The reframing technique clicked today. I used it with my boss.,,T04,0,Active
+P052,12,2025-01-09,10,1,8.6,8.2,8.9,8.8,Really felt heard today. The breathing exercise actually worked this week.,,T04,0,Graduated
+P053,1,2024-08-08,0,1,6.1,5.9,6.0,5.8,Fine. Going through a lot this week so hard to focus.,16.0,T01,0,Active
+P053,2,2024-08-12,7,0,7.0,5.9,5.9,6.2,,,T01,0,Active
+P053,3,2024-08-18,6,0,7.2,5.3,6.9,6.7,Okay session. Nothing dramatic.,,T01,0,Active
+P053,4,2024-08-28,9,1,6.9,5.9,6.6,6.6,,,T01,0,Active
+P053,5,2024-09-02,7,3,6.9,6.6,7.7,7.5,Fine. Going through a lot this week so hard to focus.,14.0,T01,0,Active
+P053,6,2024-09-11,9,3,7.6,8.3,7.4,7.8,Okay session. Nothing dramatic.,,T01,0,Active
+P054,1,2024-08-25,0,1,9.7,9.1,8.1,9.0,,9.0,T04,0,Active
+P054,2,2024-09-04,10,1,10.0,7.2,9.7,9.0,Feeling more in control. Session felt very focused.,,T04,0,Active
+P054,3,2024-09-08,7,1,10.0,8.6,9.9,10.0,Feeling more in control. Session felt very focused.,,T04,0,Active
+P054,4,2024-09-18,10,1,9.5,9.1,9.7,9.8,The reframing technique clicked today. I used it with my boss.,,T04,0,Active
+P054,5,2024-09-25,10,3,10.0,10.0,10.0,10.0,You remembered what I said last time. That means a lot.,6.0,T04,0,Active
+P054,6,2024-09-29,7,2,10.0,8.2,9.6,10.0,The reframing technique clicked today. I used it with my boss.,,T04,0,Active
+P054,7,2024-10-06,7,2,10.0,10.0,9.4,10.0,The reframing technique clicked today. I used it with my boss.,,T04,0,Active
+P054,8,2024-10-13,7,3,10.0,9.5,10.0,10.0,Feeling more in control. Session felt very focused.,,T04,0,Active
+P054,9,2024-10-22,9,2,9.9,9.8,9.8,10.0,The reframing technique clicked today. I used it with my boss.,7.0,T04,0,Active
+P054,10,2024-10-28,8,0,10.0,9.5,9.8,10.0,,,T04,0,Active
+P054,11,2024-11-05,9,2,10.0,9.4,9.9,10.0,Finally talked about the thing I've been avoiding. Feel lighter.,,T04,0,Active
+P054,12,2024-11-11,8,0,10.0,10.0,10.0,10.0,The reframing technique clicked today. I used it with my boss.,,T04,0,Graduated
+P055,1,2024-08-17,0,1,8.3,6.0,7.2,7.8,Same as usual. Hope it builds over time.,9.0,T04,0,Active
+P055,2,2024-08-25,9,0,7.7,7.6,9.1,8.0,You remembered what I said last time. That means a lot.,,T04,0,Active
+P055,3,2024-09-02,10,1,10.0,8.8,9.2,8.8,The reframing technique clicked today. I used it with my boss.,,T04,0,Active
+P055,4,2024-09-06,7,0,8.6,8.3,8.8,9.2,You remembered what I said last time. That means a lot.,,T04,0,Active
+P055,5,2024-09-13,7,0,9.5,8.9,9.3,9.5,You remembered what I said last time. That means a lot.,3.0,T04,0,Active
+P056,1,2024-09-04,0,1,5.6,5.9,7.4,6.6,Same as usual. Hope it builds over time.,18.0,T03,0,Active
+P056,2,2024-09-14,9,0,8.3,5.5,7.4,7.0,Fine. Going through a lot this week so hard to focus.,,T03,0,Active
+P056,3,2024-09-18,6,0,8.2,7.5,9.8,8.1,,,T03,0,Active
+P056,4,2024-09-28,9,1,7.5,7.7,8.4,8.0,You remembered what I said last time. That means a lot.,,T03,0,Active
+P057,1,2024-06-13,0,1,9.2,9.3,9.0,8.9,Really felt heard today. The breathing exercise actually worked this week.,10.0,T03,0,Active
+P057,2,2024-06-18,6,0,8.7,9.8,8.9,9.3,Really felt heard today. The breathing exercise actually worked this week.,,T03,0,Active
+P057,3,2024-06-26,7,1,9.4,8.4,10.0,9.4,Finally talked about the thing I've been avoiding. Feel lighter.,,T03,0,Active
+P057,4,2024-07-02,6,1,9.0,10.0,10.0,9.8,,,T03,0,Active
+P057,5,2024-07-10,7,2,10.0,9.5,10.0,10.0,Really felt heard today. The breathing exercise actually worked this week.,9.0,T03,0,Active
+P057,6,2024-07-16,6,2,10.0,9.9,10.0,10.0,The homework was tough but I see why you gave it. Progress!,,T03,0,Active
+P057,7,2024-07-25,8,2,10.0,9.4,10.0,10.0,,,T03,0,Active
+P057,8,2024-08-03,10,3,10.0,10.0,8.3,10.0,Finally talked about the thing I've been avoiding. Feel lighter.,,T03,0,Graduated
+P058,1,2024-08-01,0,0,9.4,8.5,9.1,8.6,The homework was tough but I see why you gave it. Progress!,13.0,T02,0,Active
+P058,2,2024-08-08,8,0,9.5,7.9,9.3,8.9,,,T02,0,Active
+P058,3,2024-08-15,8,0,9.7,9.1,9.8,9.0,Really felt heard today. The breathing exercise actually worked this week.,,T02,0,Active
+P058,4,2024-08-22,8,1,10.0,9.5,10.0,9.7,You remembered what I said last time. That means a lot.,,T02,0,Active
+P058,5,2024-08-28,7,3,10.0,8.8,10.0,10.0,,10.0,T02,0,Active
+P058,6,2024-09-07,10,2,10.0,9.4,9.6,10.0,The homework was tough but I see why you gave it. Progress!,,T02,0,Active
+P058,7,2024-09-13,9,0,10.0,8.0,10.0,10.0,Finally talked about the thing I've been avoiding. Feel lighter.,,T02,0,Active
+P058,8,2024-09-18,7,3,10.0,8.7,10.0,9.9,Feeling more in control. Session felt very focused.,,T02,0,Active
+P058,9,2024-09-25,7,0,10.0,7.8,9.2,9.6,The reframing technique clicked today. I used it with my boss.,9.0,T02,0,Active
+P058,10,2024-10-04,9,1,9.4,9.8,9.6,9.6,,,T02,0,Active
+P058,11,2024-10-10,8,2,10.0,7.9,10.0,10.0,The reframing technique clicked today. I used it with my boss.,,T02,0,Graduated
+P059,1,2024-01-12,0,1,3.9,4.7,6.3,5.1,Fine. Going through a lot this week so hard to focus.,18.0,T04,0,Active
+P059,2,2024-01-17,6,0,6.4,5.2,5.3,5.5,,,T04,0,Active
+P059,3,2024-01-26,8,0,7.0,5.0,6.7,6.3,,,T04,0,Active
+P059,4,2024-02-04,10,2,6.7,6.4,7.9,6.1,Same as usual. Hope it builds over time.,,T04,0,Active
+P060,1,2024-10-07,0,0,8.9,7.5,8.1,8.0,You remembered what I said last time. That means a lot.,12.0,T04,0,Active
+P060,2,2024-10-13,7,1,8.4,7.9,8.9,8.3,Finally talked about the thing I've been avoiding. Feel lighter.,,T04,0,Active
+P060,3,2024-10-22,9,1,7.8,6.9,7.8,7.9,,,T04,0,Active
+P060,4,2024-10-30,10,1,7.5,6.7,7.7,7.9,,,T04,0,Active
+P060,5,2024-11-03,7,1,8.7,7.7,8.2,8.0,The homework was tough but I see why you gave it. Progress!,12.0,T04,0,Active
+P060,6,2024-11-13,10,3,8.3,7.9,8.1,8.1,Feeling more in control. Session felt very focused.,,T04,0,Active
+P060,7,2024-11-16,6,0,8.9,7.5,7.1,8.5,Really felt heard today. The breathing exercise actually worked this week.,,T04,0,Active
+P060,8,2024-11-27,10,1,8.7,9.1,9.2,8.5,Finally talked about the thing I've been avoiding. Feel lighter.,,T04,0,Graduated
+P061,1,2024-07-28,0,0,8.5,8.4,8.7,9.3,You remembered what I said last time. That means a lot.,9.0,T04,0,Active
+P061,2,2024-08-05,10,1,9.6,9.0,9.4,9.6,The homework was tough but I see why you gave it. Progress!,,T04,0,Active
+P061,3,2024-08-12,10,1,10.0,9.8,10.0,10.0,Really felt heard today. The breathing exercise actually worked this week.,,T04,0,Active
+P061,4,2024-08-18,9,0,10.0,8.6,10.0,10.0,,,T04,0,Active
+P061,5,2024-08-25,9,0,10.0,10.0,9.5,10.0,,4.0,T04,0,Active
+P061,6,2024-08-31,8,0,10.0,9.8,9.6,10.0,,,T04,0,Active
+P061,7,2024-09-07,8,0,9.9,10.0,9.4,10.0,You remembered what I said last time. That means a lot.,,T04,0,Active
+P061,8,2024-09-16,10,0,10.0,8.8,10.0,10.0,Really felt heard today. The breathing exercise actually worked this week.,,T04,0,Active
+P061,9,2024-09-22,9,2,10.0,10.0,9.8,10.0,The homework was tough but I see why you gave it. Progress!,7.0,T04,0,Active
+P061,10,2024-09-30,10,0,10.0,8.7,10.0,10.0,The homework was tough but I see why you gave it. Progress!,,T04,0,Active
+P061,11,2024-10-06,9,0,10.0,9.3,9.5,10.0,The reframing technique clicked today. I used it with my boss.,,T04,0,Active
+P061,12,2024-10-13,9,1,8.7,9.0,10.0,9.7,Finally talked about the thing I've been avoiding. Feel lighter.,,T04,0,Graduated
+P062,1,2024-01-15,0,1,9.2,8.6,8.5,8.6,,12.0,T05,0,Active
+P062,2,2024-01-23,9,1,8.8,8.4,9.8,8.8,The homework was tough but I see why you gave it. Progress!,,T05,0,Active
+P062,3,2024-01-31,10,0,8.8,7.4,9.3,9.1,Feeling more in control. Session felt very focused.,,T05,0,Active
+P062,4,2024-02-03,6,0,9.9,9.2,9.8,9.6,,,T05,0,Active
+P062,5,2024-02-14,10,1,9.6,10.0,8.5,9.4,You remembered what I said last time. That means a lot.,8.0,T05,0,Active
+P062,6,2024-02-17,6,0,10.0,8.2,10.0,10.0,The reframing technique clicked today. I used it with my boss.,,T05,0,Active
+P062,7,2024-02-27,9,3,10.0,9.5,10.0,10.0,,,T05,0,Active
+P062,8,2024-03-03,7,1,9.7,9.0,9.9,10.0,,,T05,0,Active
+P062,9,2024-03-11,8,1,10.0,10.0,10.0,10.0,The reframing technique clicked today. I used it with my boss.,8.0,T05,0,Active
+P062,10,2024-03-17,7,0,10.0,9.9,10.0,10.0,Really felt heard today. The breathing exercise actually worked this week.,,T05,0,Graduated
+P063,1,2024-04-21,0,0,10.0,7.2,9.2,9.0,You remembered what I said last time. That means a lot.,13.0,T04,0,Active
+P063,2,2024-04-25,7,0,10.0,8.5,9.0,9.0,The homework was tough but I see why you gave it. Progress!,,T04,0,Active
+P063,3,2024-05-05,10,0,8.9,8.2,9.7,8.8,,,T04,0,Active
+P063,4,2024-05-12,10,2,8.2,9.7,8.2,9.0,Really felt heard today. The breathing exercise actually worked this week.,,T04,0,Active
+P063,5,2024-05-16,7,0,9.7,8.7,10.0,9.5,,8.0,T04,0,Active
+P063,6,2024-05-25,9,1,10.0,10.0,9.3,10.0,You remembered what I said last time. That means a lot.,,T04,0,Active
+P063,7,2024-05-29,6,1,10.0,9.0,10.0,10.0,The reframing technique clicked today. I used it with my boss.,,T04,0,Active
+P063,8,2024-06-06,7,2,10.0,9.0,10.0,10.0,Feeling more in control. Session felt very focused.,,T04,0,Active
+P063,9,2024-06-13,7,2,10.0,9.3,10.0,10.0,Finally talked about the thing I've been avoiding. Feel lighter.,8.0,T04,0,Active
+P063,10,2024-06-23,10,1,9.8,9.9,10.0,10.0,,,T04,0,Graduated
+P064,1,2024-08-31,0,1,6.1,6.4,7.0,6.4,,11.0,T03,0,Active
+P064,2,2024-09-07,10,1,5.3,4.3,5.5,5.2,Okay session. Nothing dramatic.,,T03,1,Dropped Out
+P065,1,2024-05-09,0,1,7.4,5.4,8.1,7.4,,7.0,T01,0,Active
+P065,2,2024-05-15,9,0,8.5,8.6,7.4,8.5,The reframing technique clicked today. I used it with my boss.,,T01,0,Active
+P065,3,2024-05-22,9,0,9.4,7.2,9.2,8.7,,,T01,0,Active
+P065,4,2024-05-27,7,0,9.2,7.6,8.8,8.9,The reframing technique clicked today. I used it with my boss.,,T01,0,Active
+P065,5,2024-06-03,7,3,9.5,8.5,9.4,8.9,Really felt heard today. The breathing exercise actually worked this week.,9.0,T01,0,Active
+P065,6,2024-06-13,10,3,9.0,10.0,9.7,9.5,,,T01,0,Active
+P065,7,2024-06-20,10,1,9.6,8.1,9.7,9.7,,,T01,0,Active
+P065,8,2024-06-24,7,2,10.0,9.1,10.0,9.7,You remembered what I said last time. That means a lot.,,T01,0,Active
+P065,9,2024-07-02,8,0,9.6,9.5,9.3,10.0,,6.0,T01,0,Active
+P065,10,2024-07-09,8,0,10.0,9.2,8.5,10.0,You remembered what I said last time. That means a lot.,,T01,0,Graduated
+P066,1,2024-04-24,0,0,8.6,5.8,8.0,7.7,Okay session. Nothing dramatic.,9.0,T01,0,Active
+P066,2,2024-04-28,7,0,7.7,7.1,8.0,7.7,,,T01,0,Active
+P066,3,2024-05-05,7,1,8.2,7.1,8.2,8.1,The reframing technique clicked today. I used it with my boss.,,T01,0,Active
+P066,4,2024-05-11,6,1,5.8,4.6,6.5,6.0,Fine. Going through a lot this week so hard to focus.,,T01,0,Active
+P066,5,2024-05-18,6,3,5.0,5.3,5.7,5.3,Fine. Going through a lot this week so hard to focus.,6.0,T01,1,Dropped Out
+P067,1,2024-06-10,0,0,8.6,8.5,8.3,7.6,,8.0,T01,0,Active
+P067,2,2024-06-16,8,1,7.8,6.4,7.1,7.5,,,T01,0,Active
+P067,3,2024-06-24,9,1,8.2,7.4,8.5,7.6,Same as usual. Hope it builds over time.,,T01,0,Active
+P067,4,2024-06-30,8,1,8.7,6.4,8.8,8.1,,,T01,0,Active
+P067,5,2024-07-08,9,0,8.5,7.9,9.0,8.7,,10.0,T01,0,Active
+P067,6,2024-07-14,8,1,10.0,8.9,8.9,8.9,Feeling more in control. Session felt very focused.,,T01,0,Active
+P067,7,2024-07-21,8,3,9.6,9.2,8.9,9.0,Really felt heard today. The breathing exercise actually worked this week.,,T01,0,Active
+P068,1,2024-02-08,0,0,8.2,7.9,7.4,7.7,Same as usual. Hope it builds over time.,19.0,T04,0,Active
+P068,2,2024-02-18,10,1,6.9,5.5,7.3,6.9,Same as usual. Hope it builds over time.,,T04,0,Active
+P068,3,2024-02-22,7,1,6.9,6.1,7.3,6.2,Same as usual. Hope it builds over time.,,T04,1,Dropped Out
+P069,1,2024-01-22,0,1,7.9,5.9,7.5,7.6,,9.0,T01,0,Active
+P069,2,2024-01-30,8,1,7.6,6.9,7.3,6.9,,,T01,0,Active
+P069,3,2024-02-07,9,1,6.8,6.0,6.2,6.5,Fine. Going through a lot this week so hard to focus.,,T01,0,Active
+P069,4,2024-02-13,8,0,7.2,6.4,7.0,6.6,Fine. Going through a lot this week so hard to focus.,,T01,0,Active
+P069,5,2024-02-22,10,3,6.1,3.9,6.9,6.1,Fine. Going through a lot this week so hard to focus.,8.0,T01,0,Active
+P069,6,2024-02-29,10,1,4.6,4.8,4.6,4.7,"I need help with my boss, not my childhood. Felt a bit off-track today.",,T01,1,Dropped Out
+P070,1,2024-09-06,0,0,7.7,7.2,6.6,7.6,,16.0,T01,0,Active
+P070,2,2024-09-14,7,0,8.7,6.9,7.5,8.2,The homework was tough but I see why you gave it. Progress!,,T01,0,Active
+P070,3,2024-09-21,7,0,7.5,8.4,7.7,8.0,You remembered what I said last time. That means a lot.,,T01,0,Active
+P070,4,2024-10-01,10,1,9.9,7.9,7.9,8.8,Feeling more in control. Session felt very focused.,,T01,0,Active
+P070,5,2024-10-04,6,3,8.9,9.7,9.2,9.2,,13.0,T01,0,Active
+P071,1,2024-10-05,0,1,6.7,5.0,5.8,6.3,Okay session. Nothing dramatic.,19.0,T05,0,Active
+P071,2,2024-10-08,6,1,7.2,6.2,6.8,6.7,,,T05,0,Active
+P071,3,2024-10-17,8,0,7.1,6.5,6.7,7.2,,,T05,0,Active
+P071,4,2024-10-25,9,0,7.5,7.1,5.8,6.8,Okay session. Nothing dramatic.,,T05,0,Active
+P071,5,2024-10-29,6,1,4.3,2.8,4.2,4.5,The session felt rushed. Didn't get to the main thing I wanted to discuss.,19.0,T05,0,Active
+P071,6,2024-11-06,7,2,2.6,1.8,2.5,3.0,Still struggling with the same thing. Feeling stuck.,,T05,1,Dropped Out
+P072,1,2024-08-17,0,1,7.7,8.2,9.0,8.0,,12.0,T01,0,Active
+P072,2,2024-08-27,9,0,7.7,6.8,8.7,8.0,You remembered what I said last time. That means a lot.,,T01,0,Active
+P072,3,2024-09-02,8,0,8.8,8.3,8.7,8.4,Really felt heard today. The breathing exercise actually worked this week.,,T01,0,Active
+P072,4,2024-09-07,6,1,9.0,6.9,9.2,8.5,,,T01,0,Active
+P072,5,2024-09-17,9,3,9.6,8.0,8.8,8.7,Really felt heard today. The breathing exercise actually worked this week.,7.0,T01,0,Active
+P072,6,2024-09-21,6,1,10.0,9.7,9.8,9.7,The homework was tough but I see why you gave it. Progress!,,T01,0,Active
+P072,7,2024-10-01,9,3,10.0,9.2,10.0,10.0,Feeling more in control. Session felt very focused.,,T01,0,Active
+P072,8,2024-10-09,10,0,9.6,9.3,9.8,9.8,Really felt heard today. The breathing exercise actually worked this week.,,T01,0,Active
+P072,9,2024-10-13,7,1,10.0,9.2,10.0,10.0,,12.0,T01,0,Active
+P072,10,2024-10-21,8,0,10.0,8.2,10.0,10.0,The homework was tough but I see why you gave it. Progress!,,T01,0,Graduated
+P073,1,2024-06-18,0,0,8.5,7.5,8.8,8.7,Finally talked about the thing I've been avoiding. Feel lighter.,12.0,T01,0,Active
+P073,2,2024-06-23,8,0,9.2,9.3,10.0,9.3,You remembered what I said last time. That means a lot.,,T01,0,Active
+P073,3,2024-07-02,10,0,9.4,9.1,9.8,9.4,,,T01,0,Active
+P073,4,2024-07-05,6,1,10.0,9.4,10.0,9.8,Finally talked about the thing I've been avoiding. Feel lighter.,,T01,0,Active
+P073,5,2024-07-16,10,1,10.0,8.5,10.0,10.0,,12.0,T01,0,Active
+P073,6,2024-07-23,10,2,9.9,9.5,10.0,10.0,,,T01,0,Active
+P073,7,2024-07-27,7,0,10.0,10.0,10.0,10.0,Feeling more in control. Session felt very focused.,,T01,0,Active
+P073,8,2024-08-02,6,0,9.9,8.4,10.0,10.0,,,T01,0,Graduated
+P074,1,2024-01-07,0,1,8.1,8.0,6.5,6.9,Same as usual. Hope it builds over time.,25.0,T03,0,Active
+P074,2,2024-01-12,6,1,7.8,8.0,7.7,7.8,,,T03,0,Active
+P074,3,2024-01-22,9,0,7.9,7.1,6.5,7.6,Same as usual. Hope it builds over time.,,T03,0,Active
+P074,4,2024-01-30,10,1,8.5,7.1,8.0,8.2,,,T03,0,Active
+P074,5,2024-02-03,7,3,9.3,6.8,8.9,8.3,The homework was tough but I see why you gave it. Progress!,22.0,T03,0,Active
+P075,1,2024-08-17,0,0,9.6,8.3,7.1,7.8,Okay session. Nothing dramatic.,5.0,T04,0,Active
+P075,2,2024-08-25,8,0,7.8,8.1,8.6,8.2,,,T04,0,Active
+P075,3,2024-08-31,7,1,9.3,8.0,8.7,8.7,Feeling more in control. Session felt very focused.,,T04,0,Active
+P075,4,2024-09-08,8,0,9.9,9.0,8.2,9.4,The homework was tough but I see why you gave it. Progress!,,T04,0,Active
+P075,5,2024-09-13,6,2,9.8,8.4,9.8,9.6,,9.0,T04,0,Active
+P075,6,2024-09-22,8,2,10.0,8.9,10.0,9.7,The homework was tough but I see why you gave it. Progress!,,T04,0,Active
+P075,7,2024-09-28,7,0,10.0,9.4,10.0,9.6,Finally talked about the thing I've been avoiding. Feel lighter.,,T04,0,Active
+P075,8,2024-10-07,9,3,10.0,8.2,10.0,9.6,,,T04,0,Graduated
+P076,1,2024-08-31,0,1,5.9,5.1,6.5,5.8,,14.0,T05,0,Active
+P076,2,2024-09-09,10,1,4.7,2.4,4.0,3.9,Hard to open up today. Not sure why.,,T05,1,Dropped Out
+P077,1,2024-06-07,0,0,4.1,3.5,5.2,4.5,The session felt rushed. Didn't get to the main thing I wanted to discuss.,17.0,T04,0,Active
+P077,2,2024-06-15,10,0,5.5,2.4,3.2,4.2,Hard to open up today. Not sure why.,,T04,0,Active
+P077,3,2024-06-19,7,0,5.0,3.6,3.4,3.8,I don't think the technique is working for me. Need a different approach?,,T04,0,Active
+P077,4,2024-06-27,8,1,5.1,1.9,4.6,4.5,,,T04,0,Active
+P077,5,2024-07-03,7,1,4.1,3.8,3.1,3.6,Didn't feel like we got anywhere today. A bit frustrated.,17.0,T04,1,Dropped Out
+P078,1,2024-04-21,0,1,7.3,8.6,6.4,7.0,Okay session. Nothing dramatic.,14.0,T02,0,Active
+P078,2,2024-04-28,8,1,7.9,7.2,7.2,6.9,Fine. Going through a lot this week so hard to focus.,,T02,0,Active
+P078,3,2024-05-06,9,0,8.2,6.8,7.3,7.0,,,T02,0,Active
+P078,4,2024-05-10,6,0,7.2,7.4,7.7,6.9,Same as usual. Hope it builds over time.,,T02,0,Active
+P078,5,2024-05-17,6,3,7.5,5.9,7.5,7.5,Same as usual. Hope it builds over time.,10.0,T02,0,Active
+P078,6,2024-05-28,10,3,8.4,8.6,7.9,8.1,Feeling more in control. Session felt very focused.,,T02,0,Active
+P078,7,2024-06-03,9,2,8.6,7.8,8.9,8.3,,,T02,0,Active
+P078,8,2024-06-11,10,1,7.8,7.6,8.8,8.6,The reframing technique clicked today. I used it with my boss.,,T02,0,Active
+P078,9,2024-06-16,8,1,9.2,7.4,7.3,8.3,,13.0,T02,0,Active
+P078,10,2024-06-23,8,1,8.5,7.0,8.2,8.5,,,T02,0,Graduated
+P079,1,2024-01-10,0,0,6.5,5.9,5.6,5.9,Same as usual. Hope it builds over time.,17.0,T02,0,Active
+P079,2,2024-01-17,9,1,5.6,5.2,6.3,5.3,,,T02,0,Active
+P079,3,2024-01-23,8,0,6.7,6.1,6.2,6.0,,,T02,0,Active
+P079,4,2024-01-29,7,2,7.8,6.6,6.4,6.8,,,T02,0,Active
+P079,5,2024-02-05,7,0,8.4,7.5,7.2,7.4,,14.0,T02,0,Active
+P079,6,2024-02-12,7,3,7.6,7.1,7.4,7.2,Same as usual. Hope it builds over time.,,T02,0,Active
+P079,7,2024-02-18,6,3,7.9,8.3,8.1,7.4,,,T02,0,Active
+P079,8,2024-02-26,7,2,8.1,8.0,7.2,7.7,Fine. Going through a lot this week so hard to focus.,,T02,0,Graduated
+P080,1,2024-02-24,0,1,9.0,7.3,9.0,8.9,The homework was tough but I see why you gave it. Progress!,10.0,T02,0,Active
+P080,2,2024-03-02,9,1,9.9,7.9,10.0,9.1,,,T02,0,Active
+P080,3,2024-03-10,10,1,9.7,9.4,8.8,9.1,Really felt heard today. The breathing exercise actually worked this week.,,T02,0,Active
+P080,4,2024-03-15,8,2,9.8,7.7,9.7,9.1,The homework was tough but I see why you gave it. Progress!,,T02,0,Active
+P080,5,2024-03-20,6,1,9.4,8.9,8.4,9.0,Feeling more in control. Session felt very focused.,6.0,T02,0,Active
+P080,6,2024-03-28,7,0,9.6,7.7,9.4,9.0,,,T02,0,Active
+P001,12,2026-06-13,777,1,8.0,7.3,8.0,5.3,,,T01,0,Active
+P081,1,2026-06-20,0,0,8.0,4.9,7.6,5.2,,,T03,0,Active
+P081,2,2026-06-23,3,0,6.2,4.5,1.2,2.7,,,T03,1,Dropped
+P006,7,2026-06-20,827,3,8.0,4.6,1.5,4.7,gradually but slowly progressing but still signs of stress and relapse are occuring ,,T02,0,Active
+P082,1,2026-06-27,0,7,8.0,3.8,2.8,4.9,not cooperating,,T01,0,Active
+P082,2,2026-07-23,26,0,8.0,8.0,3.4,6.5,,,T01,0,Active
+P085,1,2026-06-21,0,3,8.0,8.0,8.0,8.0,,,T04,0,Active
+P086,1,2026-06-21,0,1,3.2,5.8,3.4,4.1,,,T03,0,Active
+P086,2,2026-06-30,9,2,6.1,5.1,1.2,4.1,,,T03,0,Active

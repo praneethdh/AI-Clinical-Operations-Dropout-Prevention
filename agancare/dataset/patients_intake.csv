@@ -1,0 +1,87 @@
+patient_id,full_name,age,gender,insurance_status,baseline_phq9,baseline_gad7,therapist_pref_gender,intake_text,assigned_therapist_id,assigned_therapist_name,intake_date,phone,city,baseline_flight_risk_score
+P001,Rohan Gupta,36,Male,Insured,13,14,No Preference,Anxiety attacks from a past assault. I need someone practical who gives me homework.,T01,Dr. Priya Menon,2024-02-14,919536146025,Hyderabad,18
+P002,Rohan Singh,47,Male,Insured,12,11,Male Therapist,I check the locks 20 times before bed. I know it's irrational but I can't stop.,T05,Dr. Sneha Kapoor,2024-10-14,917854001193,Chennai,18
+P003,Pooja Khan,47,Female,Out-of-Pocket,17,10,No Preference,Workplace pressure is making me lose it. I need skills not just talking.,T02,Dr. Arjun Sharma,2024-06-23,918193448329,Mumbai,33
+P004,Rahul Patel,37,Male,Insured,11,10,No Preference,My best friend betrayed me. Trust issues are ruining every relationship now.,T03,Dr. Fatima Noor,2024-05-15,917186618211,Chennai,18
+P005,Yamini Patel,34,Female,Uninsured,4,5,Female Therapist,Anxiety attacks from a past assault. I need someone practical who gives me homework.,T01,Dr. Priya Menon,2024-05-30,919699987374,Pune,40
+P006,Zara Iyer,26,Female,Out-of-Pocket,8,13,No Preference,I'm overwhelmed and I don't know how to cope. Looking for stress management tools.,T02,Dr. Arjun Sharma,2024-02-10,917999829240,Kolkata,33
+P007,Suresh Gupta,22,Male,Out-of-Pocket,6,17,Female Therapist,I'm overwhelmed and I don't know how to cope. Looking for stress management tools.,T02,Dr. Arjun Sharma,2024-06-30,917899825838,Chennai,60
+P008,Divya Pandey,29,Female,Out-of-Pocket,14,6,Male Therapist,"Massive burnout from my IT job. I can't feel anything anymore, just numb.",T02,Dr. Arjun Sharma,2024-08-24,918629748727,Delhi,25
+P009,Rahul Kumar,26,Male,Insured,14,7,No Preference,We lost our baby. My husband and I can't talk to each other anymore.,T03,Dr. Fatima Noor,2024-05-17,917284277889,Mumbai,20
+P010,Nisha Das,35,Female,Insured,10,10,Male Therapist,"I can't face college. Pressure from parents is unbearable, I feel hopeless.",T04,Dr. Rajan Pillai,2024-05-15,917599707677,Mumbai,8
+P011,Zara Shah,25,Female,Uninsured,23,11,Female Therapist,Divorce is killing me. I don't know who I am without my husband.,T03,Dr. Fatima Noor,2024-03-11,919188398760,Hyderabad,68
+P012,Amit Patel,21,Male,Insured,18,7,No Preference,I feel like I'm a disappointment. Nothing I do is ever enough for my family.,T04,Dr. Rajan Pillai,2024-02-02,918652563013,Hyderabad,40
+P013,Vidya Gupta,34,Female,Uninsured,4,6,No Preference,Anxiety attacks from a past assault. I need someone practical who gives me homework.,T01,Dr. Priya Menon,2024-05-16,919752909971,Delhi,40
+P014,Ishaan Shah,33,Male,Insured,17,12,No Preference,I'm isolated after moving cities. Grief for the life I left behind.,T03,Dr. Fatima Noor,2024-04-01,919180476188,Bengaluru,38
+P015,Vidya Pandey,30,Female,Insured,12,6,Female Therapist,My mood swings are destroying my marriage. I need a systematic approach.,T02,Dr. Arjun Sharma,2024-09-28,917002456273,Pune,10
+P016,Uma Sharma,24,Female,Insured,11,16,Female Therapist,Divorce is killing me. I don't know who I am without my husband.,T03,Dr. Fatima Noor,2024-01-30,918034535593,Pune,35
+P017,Vikram Das,35,Male,Out-of-Pocket,5,13,Male Therapist,"Massive burnout from my IT job. I can't feel anything anymore, just numb.",T02,Dr. Arjun Sharma,2024-08-31,919361388464,Mumbai,33
+P018,Vidya Pandey,28,Female,Insured,10,14,No Preference,Constant fear that I said something wrong. Replay conversations for hours.,T05,Dr. Sneha Kapoor,2024-06-08,918713658874,Chennai,18
+P019,Tanya Bose,42,Female,Out-of-Pocket,18,8,No Preference,I snap at my family and then hate myself. My emotions are out of control.,T02,Dr. Arjun Sharma,2024-06-22,917090341465,Pune,25
+P020,Deepak Mehta,28,Male,Insured,15,15,Male Therapist,I was in an abusive relationship for three years. I freeze when I hear his name.,T01,Dr. Priya Menon,2024-02-04,917134917627,Kolkata,45
+P021,Divya Bose,27,Female,Insured,13,7,Male Therapist,"I can't face college. Pressure from parents is unbearable, I feel hopeless.",T04,Dr. Rajan Pillai,2024-10-03,917568275055,Chennai,10
+P022,Pooja Das,20,Female,Out-of-Pocket,18,17,No Preference,"I keep reliving the accident. Flashbacks every night, can't sleep, jumpy all the time.",T01,Dr. Priya Menon,2024-08-08,918521696479,Hyderabad,60
+P023,Tanya Kumar,31,Female,Out-of-Pocket,19,13,Male Therapist,"I keep reliving the accident. Flashbacks every night, can't sleep, jumpy all the time.",T01,Dr. Priya Menon,2024-07-25,918457293575,Kolkata,43
+P024,Dev Iyer,25,Male,Insured,15,18,Female Therapist,Workplace pressure is making me lose it. I need skills not just talking.,T02,Dr. Arjun Sharma,2024-04-03,918196342297,Hyderabad,45
+P025,Vikram Khan,31,Male,Out-of-Pocket,21,1,Male Therapist,"I keep reliving the accident. Flashbacks every night, can't sleep, jumpy all the time.",T01,Dr. Priya Menon,2024-10-03,917063384488,Bengaluru,55
+P026,Nikhil Shah,40,Male,Out-of-Pocket,14,10,No Preference,"My 16 year old is failing school, refuses to talk, stays in room all day.",T04,Dr. Rajan Pillai,2024-03-25,918627677155,Bengaluru,33
+P027,Rekha Khan,32,Female,Insured,4,11,Male Therapist,I'm a perfectionist and it's paralyzing me. I miss deadlines from overthinking.,T05,Dr. Sneha Kapoor,2024-03-20,917815605132,Delhi,18
+P028,Amit Ghosh,35,Male,Out-of-Pocket,21,9,No Preference,My mother passed away six months ago and I can't move on. I feel guilty.,T03,Dr. Fatima Noor,2024-01-26,919509023674,Hyderabad,45
+P029,Amit Bose,23,Male,Insured,11,15,No Preference,Anxiety attacks from a past assault. I need someone practical who gives me homework.,T01,Dr. Priya Menon,2024-02-04,919900015820,Kolkata,45
+P030,Suresh Patel,35,Male,Uninsured,11,14,Male Therapist,My mood swings are destroying my marriage. I need a systematic approach.,T02,Dr. Arjun Sharma,2024-01-21,919660223333,Bengaluru,48
+P031,Zara Ghosh,32,Female,Out-of-Pocket,18,9,Female Therapist,I'm overwhelmed and I don't know how to cope. Looking for stress management tools.,T02,Dr. Arjun Sharma,2024-05-02,918140805649,Hyderabad,35
+P032,Ishaan Khan,28,Male,Insured,12,6,No Preference,I have severe PTSD after a medical emergency. Looking for CBT-based tools.,T01,Dr. Priya Menon,2024-10-15,917429416213,Bengaluru,20
+P033,Tarun Gupta,34,Male,Insured,15,12,Female Therapist,I was in an abusive relationship for three years. I freeze when I hear his name.,T01,Dr. Priya Menon,2024-07-08,918224011538,Mumbai,38
+P034,Yamini Joshi,29,Female,Out-of-Pocket,6,10,Male Therapist,I check the locks 20 times before bed. I know it's irrational but I can't stop.,T05,Dr. Sneha Kapoor,2024-10-10,918285821930,Chennai,33
+P035,Karan Gupta,28,Male,Insured,9,11,No Preference,Constant fear that I said something wrong. Replay conversations for hours.,T05,Dr. Sneha Kapoor,2024-05-19,918210133979,Pune,28
+P036,Rahul Iyer,36,Male,Out-of-Pocket,23,12,Female Therapist,I'm a perfectionist and it's paralyzing me. I miss deadlines from overthinking.,T05,Dr. Sneha Kapoor,2024-05-08,917218179599,Bengaluru,53
+P037,Rekha Kumar,34,Female,Insured,13,4,No Preference,Divorce is killing me. I don't know who I am without my husband.,T03,Dr. Fatima Noor,2024-08-14,919369449369,Chennai,10
+P038,Yamini Sharma,31,Female,Insured,14,21,Male Therapist,My mood swings are destroying my marriage. I need a systematic approach.,T02,Dr. Arjun Sharma,2024-01-19,918585770584,Pune,25
+P039,Varun Nair,30,Male,Insured,15,11,Female Therapist,The trauma from childhood won't leave me. I need structured help to process it.,T01,Dr. Priya Menon,2024-04-17,919929454134,Mumbai,38
+P040,Ankit Menon,20,Male,Uninsured,19,15,Female Therapist,Constant fear that I said something wrong. Replay conversations for hours.,T05,Dr. Sneha Kapoor,2024-05-01,917697939765,Kolkata,85
+P041,Varun Sharma,39,Male,Insured,9,17,Female Therapist,"I can't face college. Pressure from parents is unbearable, I feel hopeless.",T04,Dr. Rajan Pillai,2024-05-16,917683749521,Kolkata,25
+P042,Suresh Kumar,17,Male,Uninsured,16,20,No Preference,Workplace pressure is making me lose it. I need skills not just talking.,T02,Dr. Arjun Sharma,2024-06-28,918310784794,Kolkata,85
+P043,Dev Sharma,22,Male,Out-of-Pocket,11,12,Female Therapist,My best friend betrayed me. Trust issues are ruining every relationship now.,T03,Dr. Fatima Noor,2024-02-05,918198832728,Delhi,53
+P044,Yamini Pillai,26,Female,Uninsured,6,12,No Preference,Divorce is killing me. I don't know who I am without my husband.,T03,Dr. Fatima Noor,2024-10-24,918140169349,Bengaluru,48
+P045,Manish Shah,21,Male,Insured,16,8,Female Therapist,I feel like I'm a disappointment. Nothing I do is ever enough for my family.,T04,Dr. Rajan Pillai,2024-09-18,917496694873,Hyderabad,40
+P046,Pranav Kumar,47,Male,Out-of-Pocket,10,10,No Preference,Intrusive thoughts that horrify me. I need someone who knows OCD.,T05,Dr. Sneha Kapoor,2024-04-10,918564319318,Hyderabad,33
+P047,Rahul Pandey,40,Male,Insured,7,12,No Preference,I'm isolated after moving cities. Grief for the life I left behind.,T03,Dr. Fatima Noor,2024-06-07,919864283209,Hyderabad,18
+P048,Rina Joshi,45,Female,Out-of-Pocket,5,12,No Preference,Social anxiety at school. I eat lunch alone every day and cry at home.,T04,Dr. Rajan Pillai,2024-03-30,919643616431,Pune,23
+P049,Rina Menon,34,Female,Out-of-Pocket,17,7,Female Therapist,Divorce is killing me. I don't know who I am without my husband.,T03,Dr. Fatima Noor,2024-08-08,919491015654,Pune,35
+P050,Tanya Khan,18,Female,Insured,16,13,No Preference,I'm a perfectionist and it's paralyzing me. I miss deadlines from overthinking.,T05,Dr. Sneha Kapoor,2024-03-27,919829742424,Bengaluru,38
+P051,Vidya Pandey,34,Female,Insured,15,9,No Preference,Divorce is killing me. I don't know who I am without my husband.,T03,Dr. Fatima Noor,2024-04-11,917632880459,Bengaluru,20
+P052,Dev Das,34,Male,Out-of-Pocket,15,9,No Preference,Social anxiety at school. I eat lunch alone every day and cry at home.,T04,Dr. Rajan Pillai,2024-10-21,917835092972,Chennai,45
+P053,Uma Verma,50,Female,Insured,16,7,Male Therapist,"I keep reliving the accident. Flashbacks every night, can't sleep, jumpy all the time.",T01,Dr. Priya Menon,2024-08-05,917939915527,Mumbai,10
+P054,Sneha Menon,38,Female,Insured,9,15,No Preference,"I can't face college. Pressure from parents is unbearable, I feel hopeless.",T04,Dr. Rajan Pillai,2024-08-25,919867224513,Pune,15
+P055,Tanya Pandey,43,Female,Out-of-Pocket,9,15,Male Therapist,I feel like I'm a disappointment. Nothing I do is ever enough for my family.,T04,Dr. Rajan Pillai,2024-08-16,917683577992,Chennai,30
+P056,Tanya Gupta,36,Female,Out-of-Pocket,18,19,Male Therapist,I'm isolated after moving cities. Grief for the life I left behind.,T03,Dr. Fatima Noor,2024-09-05,919691864041,Mumbai,40
+P057,Tanya Singh,29,Female,Out-of-Pocket,10,8,No Preference,My best friend betrayed me. Trust issues are ruining every relationship now.,T03,Dr. Fatima Noor,2024-06-12,919319936135,Bengaluru,25
+P058,Karan Mehta,23,Male,Insured,13,13,No Preference,I snap at my family and then hate myself. My emotions are out of control.,T02,Dr. Arjun Sharma,2024-07-31,918750625978,Delhi,38
+P059,Sana Kumar,34,Female,Insured,18,12,Female Therapist,I feel like I'm a disappointment. Nothing I do is ever enough for my family.,T04,Dr. Rajan Pillai,2024-01-11,919472571231,Hyderabad,28
+P060,Priya Reddy,46,Female,Insured,12,21,Female Therapist,I feel like I'm a disappointment. Nothing I do is ever enough for my family.,T04,Dr. Rajan Pillai,2024-10-06,919590950133,Mumbai,15
+P061,Pooja Gupta,38,Female,Insured,9,7,No Preference,Constant comparison with siblings is breaking my self-esteem. I'm 19.,T04,Dr. Rajan Pillai,2024-07-26,917708861714,Kolkata,0
+P062,Kavya Pandey,36,Female,Out-of-Pocket,12,14,Female Therapist,Intrusive thoughts that horrify me. I need someone who knows OCD.,T05,Dr. Sneha Kapoor,2024-01-14,917360551585,Chennai,23
+P063,Kavya Khan,36,Female,Insured,13,8,Female Therapist,Constant comparison with siblings is breaking my self-esteem. I'm 19.,T04,Dr. Rajan Pillai,2024-04-18,918952918745,Delhi,0
+P064,Rina Gupta,16,Female,Out-of-Pocket,11,15,Female Therapist,My mother passed away six months ago and I can't move on. I feel guilty.,T03,Dr. Fatima Noor,2024-08-28,917083250566,Chennai,50
+P065,Ankit Mehta,34,Male,Out-of-Pocket,7,12,Male Therapist,"I keep reliving the accident. Flashbacks every night, can't sleep, jumpy all the time.",T01,Dr. Priya Menon,2024-05-06,917856247605,Kolkata,43
+P066,Manish Nair,35,Male,Insured,9,12,Female Therapist,Anxiety attacks from a past assault. I need someone practical who gives me homework.,T01,Dr. Priya Menon,2024-04-21,918997305752,Chennai,18
+P067,Neha Rao,32,Female,Out-of-Pocket,8,13,Male Therapist,I was in an abusive relationship for three years. I freeze when I hear his name.,T01,Dr. Priya Menon,2024-06-08,917464280597,Pune,33
+P068,Ishaan Ghosh,37,Male,Out-of-Pocket,19,16,Female Therapist,"I can't face college. Pressure from parents is unbearable, I feel hopeless.",T04,Dr. Rajan Pillai,2024-02-08,919543040948,Chennai,50
+P069,Siddharth Joshi,18,Male,Uninsured,9,14,Male Therapist,Anxiety attacks from a past assault. I need someone practical who gives me homework.,T01,Dr. Priya Menon,2024-01-22,918491228808,Pune,68
+P070,Neha Singh,37,Female,Out-of-Pocket,16,21,Female Therapist,I have severe PTSD after a medical emergency. Looking for CBT-based tools.,T01,Dr. Priya Menon,2024-09-07,917453285987,Hyderabad,40
+P071,Tanya Nair,37,Female,Insured,19,15,Male Therapist,Contamination anxiety is ruining my life. Can't touch door handles.,T05,Dr. Sneha Kapoor,2024-10-02,919076605983,Hyderabad,25
+P072,Zara Gupta,38,Female,Insured,12,15,No Preference,The trauma from childhood won't leave me. I need structured help to process it.,T01,Dr. Priya Menon,2024-08-18,918047385483,Kolkata,15
+P073,Zara Pandey,24,Female,Out-of-Pocket,12,10,Female Therapist,I have severe PTSD after a medical emergency. Looking for CBT-based tools.,T01,Dr. Priya Menon,2024-06-15,917780996231,Hyderabad,43
+P074,Ankit Gupta,32,Male,Insured,25,4,Male Therapist,I'm isolated after moving cities. Grief for the life I left behind.,T03,Dr. Fatima Noor,2024-01-06,919218897149,Mumbai,40
+P075,Dev Shah,38,Male,Out-of-Pocket,5,10,No Preference,Social anxiety at school. I eat lunch alone every day and cry at home.,T04,Dr. Rajan Pillai,2024-08-17,917074059253,Bengaluru,33
+P076,Pooja Verma,42,Female,Out-of-Pocket,14,7,Female Therapist,Contamination anxiety is ruining my life. Can't touch door handles.,T05,Dr. Sneha Kapoor,2024-08-30,919377148230,Pune,15
+P077,Sana Menon,24,Female,Insured,17,9,Male Therapist,Constant comparison with siblings is breaking my self-esteem. I'm 19.,T04,Dr. Rajan Pillai,2024-06-05,918079770569,Mumbai,30
+P078,Aryan Pillai,34,Male,Insured,14,9,Male Therapist,"Massive burnout from my IT job. I can't feel anything anymore, just numb.",T02,Dr. Arjun Sharma,2024-04-20,919079617090,Delhi,20
+P079,Aisha Iyer,53,Female,Insured,17,3,Female Therapist,I'm overwhelmed and I don't know how to cope. Looking for stress management tools.,T02,Dr. Arjun Sharma,2024-01-08,919294092753,Mumbai,10
+P080,Sneha Kumar,33,Female,Out-of-Pocket,10,15,Male Therapist,Workplace pressure is making me lose it. I need skills not just talking.,T02,Dr. Arjun Sharma,2024-02-22,917052679490,Pune,40
+P081,praneeth DH,28,Male,Out-of-Pocket,12,14,No Preference,work preassure and family pressere,T03,Dr. Fatima Noor,2026-06-20,919731296000,Unknown,43
+P082,alpha,28,Male,Insured,12,10,Female Therapist,,T01,Dr. Priya Menon,2026-06-21,919731296009,Unknown,28
+P083,sneha g,30,Female,Insured,10,17,Female Therapist,ptsd,T01,Dr. Priya Menon,2026-06-21,910731296009,bangalore,25
+P084,Sneha G,30,Female,Out-of-Pocket,10,10,Any,family trauma and work load,T04,Dr. Rajan Pillai,2026-06-21,919731296009,bangalore,33
+P085,Sneha G,30,Female,Out-of-Pocket,10,10,Any,family trauma and work load,T04,Dr. Rajan Pillai,2026-06-21,919731296009,bangalore,33
+P086,Mohan guprta,26,Non-binary,Uninsured,10,15,Any,sucidel thoughts,T03,Dr. Fatima Noor,2026-06-21,+919731296009,mumbai,55
