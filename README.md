@@ -1,66 +1,96 @@
----
-title: AganCare Sentinel
-emoji: 🧠
-colorFrom: green
-colorTo: teal
-sdk: streamlit
-sdk_version: 1.35.0
-app_file: app.py
-pinned: false
----
+# AganCare Sentinel: AI-Powered Clinical Operations & Patient Retention Platform
 
-# 🧠 AganCare Sentinel: AI Clinical Operations Platform
-**Streamlit • Scikit-Learn • SHAP • Twilio WhatsApp API**
+## About The Project
 
-An advanced AI-powered clinical operations platform designed to optimize therapist matching and proactively predict/prevent patient dropout in mental health clinics. 
+AganCare Sentinel is an advanced AI-powered clinical operations platform developed to improve patient retention and optimize therapist allocation within mental health clinics. Patient dropout remains one of the biggest challenges in behavioral healthcare, often resulting in interrupted treatment outcomes and reduced clinic efficiency. This project addresses that challenge by combining machine learning, natural language processing, explainable AI, and automated patient engagement workflows into a single intelligent platform.
 
----
+The system uses a multi-model AI architecture that analyzes patient intake information, therapy goals, session attendance patterns, and Session Rating Scale (SRS) scores to identify patients who may be at risk of discontinuing treatment. A TF-IDF and Cosine Similarity based recommendation engine performs semantic matching between patient needs and therapist expertise, ensuring that patients are paired with clinicians best suited to their goals. A Random Forest Classifier continuously evaluates patient engagement data and predicts dropout probabilities in real time. To improve trust and transparency, SHAP (SHapley Additive Explanations) is integrated to provide human-readable explanations behind every AI recommendation and risk prediction.
 
-## 🔗 Live Application Link
-🚀 **Hugging Face Spaces Demo: [Launch Application Here]**
+The platform also incorporates automated intervention workflows through the Twilio WhatsApp API, enabling clinics to proactively engage high-risk patients with personalized outreach messages. Built entirely using Streamlit, Pandas, Scikit-Learn, and SHAP, the application provides a modern dashboard-driven experience that helps clinics transition from reactive patient management to proactive, data-driven clinical care.
 
----
+## 🔗 Live Space Deployment
 
-## 🚀 Architecture
-This system is built as a highly interactive, state-driven Python web application:
+**Live Web Application:**
+https://huggingface.co/spaces/praneeth-dh/agancare-sentinel
 
-* **Frontend & Backend:** Built entirely with **Streamlit**, leveraging advanced state management (`st.session_state`) for seamless multi-step clinical workflows and dynamic UI rendering.
-* **Database / Data Layer:** Powered by **Pandas**, reading and appending dynamically to normalized CSV datasets containing patient intakes, session logs, and therapist profiles.
-* **AI Models:**
-  * **TF-IDF & Cosine Similarity (NLP):** Drives the semantic Intake Matchmaker to perfectly align patient goals with a therapist's clinical approach.
-  * **Random Forest Classifier (Machine Learning):** Analyzes historical Session Rating Scale (SRS) scores, missed sessions, and demographics to calculate real-time patient dropout probabilities.
-  * **SHAP (Explainable AI):** Unpacks the Random Forest and NLP algorithms to provide transparent, human-readable reasoning for all AI recommendations.
+## Library Requirements
 
----
+### Core Libraries
 
-## 🌟 Key Features
+* Streamlit
+* Pandas
+* NumPy
+* Scikit-Learn
+* SHAP
+* Twilio
+* Scipy
 
-* **🧩 Intake Matchmaker:** A dynamic 2-step pipeline that calculates baseline "flight risk", processes semantic text matching, and recommends the Top 5 therapists complete with SHAP-based feature reasoning. Includes a *Risk Override* feature that prioritizes high-retention therapists for high-risk patients.
-* **🛡️ Dropout Prevention Hub:** An analytical command center that monitors active patients. If a patient's ML risk score crosses a critical threshold, they are flagged for immediate intervention.
-* **💬 AI Intervention & WhatsApp Integration:** Generates clinical intervention strategies (e.g., suggesting a Telehealth switch to reduce friction) and sends the drafted messages directly to the patient's phone via the **Twilio WhatsApp Sandbox API**.
-* **📊 Sentinel Dashboard:** A real-time executive overview of clinic health, tracking total active patients, global dropout rates, and AI model performance metrics.
-* **Modern UI:** Features dark-mode aesthetics, custom glassmorphism metric cards, and fluid interactive expanders to make clinical data easily digestible.
+### NLP Libraries
 
----
+* Scikit-Learn TF-IDF Vectorizer
+* Cosine Similarity
 
-## 🛠️ Getting Started
+### Visualization Libraries
 
-### Prerequisites
-* Python 3.12+
-* Twilio Account (Free Sandbox)
+* Plotly
+* Matplotlib
 
-### 1. Installation
+## Getting Started
+
+Follow these instructions to set up and run the project locally.
+
+## Installation Steps
+
+### Option 1: Installation from GitHub
+
+#### 1. Clone the Repository
+
 ```bash
-# Clone the repository
 git clone https://github.com/your-username/agancare-sentinel.git
-cd agancare-sentinel
+```
 
-# Install dependencies
+#### 2. Navigate to Project Directory
+
+```bash
+cd agancare-sentinel
+```
+
+#### 3. Create a Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+#### 4. Activate Virtual Environment
+
+**Windows**
+
+```powershell
+.\venv\Scripts\activate
+```
+
+**Linux/macOS**
+
+```bash
+source venv/bin/activate
+```
+
+#### 5. Install Dependencies
+
+```bash
 pip install -r requirements.txt
 ```
 
-### 2. Configuration
-Create a `.streamlit/secrets.toml` file in the root directory and add your Twilio Sandbox credentials:
+#### 6. Configure Twilio Credentials
+
+Create:
+
+```text
+.streamlit/secrets.toml
+```
+
+Add:
+
 ```toml
 [twilio]
 TWILIO_ACCOUNT_SID = "your_account_sid"
@@ -68,40 +98,203 @@ TWILIO_AUTH_TOKEN = "your_auth_token"
 TWILIO_SANDBOX_NUMBER = "whatsapp:+14155238886"
 ```
 
-### 3. Run the Application
+#### 7. Run the Application
+
 ```bash
 streamlit run app.py
 ```
-The application will be available at `http://localhost:8501`.
 
----
+#### 8. Access the Application
 
-## 📂 Project Structure
+Open:
+
 ```text
-├── dataset/              # Core CSV database (patients, sessions, therapists)
-├── pages/                # Streamlit Application Pages
-│   ├── 1_matchmaker.py   # Intake and Therapist Matching UI
-│   ├── 2_dropout_hub.py  # ML Dropout Prediction and Intervention UI
-│   └── 3_session_logger.py # Form to log new patient sessions
-├── utils/                # Backend logic and helpers
-│   ├── data_loader.py    # Caching, feature engineering, and RF model training
-│   ├── matchmaker.py     # NLP similarity and Baseline Risk math
-│   ├── navigation.py     # Global sidebar routing
-│   └── twilio_whatsapp.py # Twilio API integration
-├── .streamlit/           # Theme and secrets configuration
-├── app.py                # Main Dashboard Entrypoint
-├── requirements.txt      # Project dependencies
-└── README.md             # You are here
+http://localhost:8501
 ```
 
----
+## 💻 How to Use
 
-## 📈 System Objectives
-* **Proactive Visibility:** Move from reactive crisis-management to predictive clinical care.
-* **Risk Mitigation:** Identify high-risk patients *before* they miss a session using ML-driven SRS trend analysis.
-* **Optimized Empathy:** Assist clinical directors in maintaining the therapeutic alliance through automated, warm, and timely WhatsApp check-ins.
+### Step 1: Open Dashboard
 
----
+Launch the application and access the Sentinel Dashboard for a real-time overview of clinic performance and patient retention metrics.
 
-## 📄 License
-Distributed under the MIT License.
+### Step 2: Use Intake Matchmaker
+
+Enter patient intake details, therapy goals, and preferences. The AI engine evaluates clinical requirements and recommends the most suitable therapists.
+
+### Step 3: Review Therapist Recommendations
+
+Analyze therapist rankings, compatibility scores, and SHAP-based explanations showing why each therapist was recommended.
+
+### Step 4: Monitor Patient Risk
+
+Navigate to the Dropout Prevention Hub to monitor active patients and their predicted dropout probabilities.
+
+### Step 5: Analyze AI Explanations
+
+Review key risk factors contributing to patient disengagement through Explainable AI visualizations.
+
+### Step 6: Generate Interventions
+
+Allow the platform to generate personalized intervention strategies based on identified risk drivers.
+
+### Step 7: Send WhatsApp Outreach
+
+Use the integrated Twilio WhatsApp Sandbox API to send supportive follow-up messages directly to patients.
+
+## Key Features
+
+### 🧩 Intake Matchmaker
+
+* Semantic therapist-patient matching
+* TF-IDF and Cosine Similarity based recommendations
+* Top 5 therapist ranking system
+* Risk-aware matching override mechanism
+* Explainable recommendation reasoning
+
+### 🛡️ Dropout Prevention Hub
+
+* Real-time patient monitoring
+* Random Forest dropout prediction
+* Automated risk categorization
+* Early intervention alerts
+
+### 💬 Automated Patient Engagement
+
+* Twilio WhatsApp integration
+* AI-generated intervention messages
+* Personalized patient outreach
+* Reduced communication delays
+
+### 📊 Sentinel Dashboard
+
+* Active patient tracking
+* Dropout rate monitoring
+* Model performance analytics
+* Clinical operations overview
+
+### 🔍 Explainable AI
+
+* SHAP visualizations
+* Transparent risk predictions
+* Human-readable recommendation insights
+
+## API Key Setup
+
+This project requires Twilio credentials for WhatsApp messaging.
+
+### Create a Twilio Account
+
+Visit the official Twilio website and create a free Sandbox account.
+
+### Configure Secrets
+
+Create:
+
+```text
+.streamlit/secrets.toml
+```
+
+Add:
+
+```toml
+[twilio]
+TWILIO_ACCOUNT_SID="your_account_sid"
+TWILIO_AUTH_TOKEN="your_auth_token"
+TWILIO_SANDBOX_NUMBER="whatsapp:+14155238886"
+```
+
+**Important:** Never commit secrets or API credentials to GitHub.
+
+## Project Structure
+
+```text
+├── dataset/
+│   ├── patients.csv
+│   ├── sessions.csv
+│   └── therapists.csv
+│
+├── pages/
+│   ├── 1_matchmaker.py
+│   ├── 2_dropout_hub.py
+│   └── 3_session_logger.py
+│
+├── utils/
+│   ├── data_loader.py
+│   ├── matchmaker.py
+│   ├── navigation.py
+│   └── twilio_whatsapp.py
+│
+├── .streamlit/
+│   ├── config.toml
+│   └── secrets.toml
+│
+├── app.py
+├── requirements.txt
+└── README.md
+```
+
+## System Objectives
+
+* Improve patient retention outcomes
+* Reduce treatment dropout rates
+* Enhance therapist-patient alignment
+* Enable proactive clinical interventions
+* Increase transparency through Explainable AI
+* Support data-driven clinical decision-making
+
+## Contributing
+
+Contributions are welcome and greatly appreciated.
+
+### Report Bugs
+
+Open an issue describing the problem and reproduction steps.
+
+### Contribute Code
+
+1. Fork the repository
+2. Create a feature branch
+
+```bash
+git checkout -b feature/AmazingFeature
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add Amazing Feature"
+```
+
+4. Push to the branch
+
+```bash
+git push origin feature/AmazingFeature
+```
+
+5. Open a Pull Request
+
+### Suggestions
+
+Feature requests and enhancement ideas are always welcome.
+
+If you find this project useful, consider giving it a ⭐ on GitHub.
+
+## License
+
+This project is licensed under the MIT License.
+
+
+## Acknowledgements
+
+Special thanks to the open-source community and the technologies that made this project possible:
+
+* Streamlit
+* Scikit-Learn
+* SHAP
+* Twilio
+* Pandas
+* NumPy
+* Plotly
+* Python
+* Hugging Face Spaces
